@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['loadingcontroller_15',['LoadingController',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_loading_1_1_loading_controller.html',1,'SnowMeltArcade::ProjectKitchen::Scenes::Loading']]]
+  ['clientcontroller_73',['ClientController',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_client_controller.html',1,'SnowMeltArcade::ProjectKitchen::Scenes::Kitchen']]]
 ];
