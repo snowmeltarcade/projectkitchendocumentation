@@ -1,6 +1,6 @@
 var dir_ba1c067579966ae1502eec60f823a510 =
 [
-    [ "SceneController.cs", "_scene_controller_8cs.html", [
+    [ "SceneController.cs", "_network_connect_2_scene_controller_8cs.html", [
       [ "SceneController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_scene_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_scene_controller" ]
     ] ],
     [ "UIConfigurationController.cs", "_u_i_configuration_controller_8cs.html", [

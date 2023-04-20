@@ -2,6 +2,11 @@ var annotated_dup =
 [
     [ "SnowMeltArcade", "namespace_snow_melt_arcade.html", [
       [ "ProjectKitchen", "namespace_snow_melt_arcade_1_1_project_kitchen.html", [
+        [ "Editor", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_editor.html", [
+          [ "EditorWindows", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_editor_1_1_editor_windows.html", [
+            [ "RunGameEditorWindow", "class_snow_melt_arcade_1_1_project_kitchen_1_1_editor_1_1_editor_windows_1_1_run_game_editor_window.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_editor_1_1_editor_windows_1_1_run_game_editor_window" ]
+          ] ]
+        ] ],
         [ "Kitchen", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen.html", [
           [ "WorkstationController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_controller.html", null ]
         ] ],
@@ -9,6 +14,11 @@ var annotated_dup =
           [ "SceneManager", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scene_1_1_scene_manager.html", null ]
         ] ],
         [ "Scenes", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_scenes.html", [
+          [ "Dev", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev.html", [
+            [ "BootstrapKitchen", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_bootstrap_kitchen.html", [
+              [ "SceneController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_bootstrap_kitchen_1_1_scene_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_bootstrap_kitchen_1_1_scene_controller" ]
+            ] ]
+          ] ],
           [ "Kitchen", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen.html", [
             [ "ClientController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_client_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_client_controller" ],
             [ "KitchenController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller" ],

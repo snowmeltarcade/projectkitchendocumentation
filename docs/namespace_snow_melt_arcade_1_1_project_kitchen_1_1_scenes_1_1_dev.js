@@ -1,0 +1,4 @@
+var namespace_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev =
+[
+    [ "BootstrapKitchen", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_bootstrap_kitchen.html", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_bootstrap_kitchen" ]
+];
