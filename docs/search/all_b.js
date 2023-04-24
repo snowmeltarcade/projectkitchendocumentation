@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['textserverconnectioncode_68',['textServerConnectionCode',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller.html#adf022f75d4ea32e52c34d0b8eeef116e',1,'SnowMeltArcade::ProjectKitchen::Scenes::NetworkConnect::UIConfigurationController']]],
-  ['textserverconnectioncodeinput_69',['textServerConnectionCodeInput',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller.html#a17bd62a78534322e6f24fa9df7e1b317',1,'SnowMeltArcade::ProjectKitchen::Scenes::NetworkConnect::UIConfigurationController']]]
+  ['mesh_52',['mesh',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_section_controller.html#a4e8b4e710f7af1294d4e1c804d7d3cfe',1,'SnowMeltArcade::ProjectKitchen::Kitchen::WorkstationSectionController']]]
 ];

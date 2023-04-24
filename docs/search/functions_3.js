@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['getplayerenteredserverconnectioncode_130',['GetPlayerEnteredServerConnectionCode',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller.html#ad2cfc5becc56baffafb62ab07812ac40',1,'SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.UIConfigurationController.GetPlayerEnteredServerConnectionCode()'],['../class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_controller.html#ada15b8136762e343e17874c41057573a',1,'SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.UIController.GetPlayerEnteredServerConnectionCode()']]]
+  ['equals_241',['Equals',['../struct_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_spawned_object_id.html#a067e9a5cdfc48b31f30942eedd393da4',1,'SnowMeltArcade.ProjectKitchen.Kitchen.SpawnedObjectId.Equals(SpawnedObjectId other)'],['../struct_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_spawned_object_id.html#a718566ec5f39b02557e7374d854d993f',1,'SnowMeltArcade.ProjectKitchen.Kitchen.SpawnedObjectId.Equals(object obj)']]]
 ];

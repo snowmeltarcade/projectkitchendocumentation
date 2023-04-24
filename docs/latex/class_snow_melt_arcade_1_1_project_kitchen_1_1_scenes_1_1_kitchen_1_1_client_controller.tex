@@ -14,8 +14,19 @@ Inheritance diagram for Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Scenes.\+Kitchen
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_client_controller_af138f84ce423622f1a3793bd34d85db3}{Assign\+Clients\+To\+Workstations}} (List$<$ \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_controller}{Workstation\+Controller}} $>$ workstations)
-\begin{DoxyCompactList}\small\item\em Assigns all connected clients to a workstation \end{DoxyCompactList}\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_client_controller_a5ed016c8d6188d2518da39b4d7b6905b}{Assign\+Clients\+To\+Workstations}} (List$<$ \mbox{\hyperlink{interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_i_workstation}{IWorkstation}} $>$ workstations)
+\begin{DoxyCompactList}\small\item\em Assigns all connected clients to a workstation \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_client_controller_a4332e72a58172c2f79b7c1a0e11d4f4b}{Activate\+Workstation}} (\mbox{\hyperlink{struct_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_spawned_object_id}{Spawned\+Object\+Id}} workstation\+Id)
+\begin{DoxyCompactList}\small\item\em Activates the passed workstation \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_client_controller_a2e40842cb06e7e95a2bf5e515237346a}{Select\+Workstation\+Section}} (\mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_section_controller}{Workstation\+Section\+Controller}} section)
+\begin{DoxyCompactList}\small\item\em Selects the passed workstation section \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller}{Player\+Controller}} \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_client_controller_adf7917f05e53e7aabe9c49569620305b}{player\+Controller}}
+\begin{DoxyCompactList}\small\item\em The client\textquotesingle{}s player \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller}{Kitchen\+Controller}} \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_client_controller_a316cbbcc2be45d34bfce1d55e159c87a}{kitchen\+Controller}}
+\begin{DoxyCompactList}\small\item\em The kitchen controller \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -23,16 +34,35 @@ Manages interactions with the connected clients
 
 
 
-Definition at line 13 of file Client\+Controller.\+cs.
+Definition at line 15 of file Client\+Controller.\+cs.
 
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_client_controller_af138f84ce423622f1a3793bd34d85db3}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_client_controller_af138f84ce423622f1a3793bd34d85db3}} 
+\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_client_controller_a4332e72a58172c2f79b7c1a0e11d4f4b}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_client_controller_a4332e72a58172c2f79b7c1a0e11d4f4b}} 
+\index{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ClientController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ClientController}!ActivateWorkstation@{ActivateWorkstation}}
+\index{ActivateWorkstation@{ActivateWorkstation}!SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ClientController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ClientController}}
+\doxysubsubsection{\texorpdfstring{ActivateWorkstation()}{ActivateWorkstation()}}
+{\footnotesize\ttfamily void Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Scenes.\+Kitchen.\+Client\+Controller.\+Activate\+Workstation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_spawned_object_id}{Spawned\+Object\+Id}}}]{workstation\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Activates the passed workstation 
+
+
+\begin{DoxyParams}{Parameters}
+{\em workstation\+Id} & The id of the workstation to activate\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 67 of file Client\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_client_controller_a5ed016c8d6188d2518da39b4d7b6905b}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_client_controller_a5ed016c8d6188d2518da39b4d7b6905b}} 
 \index{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ClientController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ClientController}!AssignClientsToWorkstations@{AssignClientsToWorkstations}}
 \index{AssignClientsToWorkstations@{AssignClientsToWorkstations}!SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ClientController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ClientController}}
 \doxysubsubsection{\texorpdfstring{AssignClientsToWorkstations()}{AssignClientsToWorkstations()}}
-{\footnotesize\ttfamily void Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Scenes.\+Kitchen.\+Client\+Controller.\+Assign\+Clients\+To\+Workstations (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_controller}{Workstation\+Controller}} $>$}]{workstations }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Scenes.\+Kitchen.\+Client\+Controller.\+Assign\+Clients\+To\+Workstations (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_i_workstation}{IWorkstation}} $>$}]{workstations }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -45,7 +75,57 @@ Assigns all connected clients to a workstation
 \end{DoxyParams}
 
 
-Definition at line 21 of file Client\+Controller.\+cs.
+Definition at line 37 of file Client\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_client_controller_a2e40842cb06e7e95a2bf5e515237346a}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_client_controller_a2e40842cb06e7e95a2bf5e515237346a}} 
+\index{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ClientController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ClientController}!SelectWorkstationSection@{SelectWorkstationSection}}
+\index{SelectWorkstationSection@{SelectWorkstationSection}!SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ClientController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ClientController}}
+\doxysubsubsection{\texorpdfstring{SelectWorkstationSection()}{SelectWorkstationSection()}}
+{\footnotesize\ttfamily void Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Scenes.\+Kitchen.\+Client\+Controller.\+Select\+Workstation\+Section (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_section_controller}{Workstation\+Section\+Controller}}}]{section }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Selects the passed workstation section 
+
+
+\begin{DoxyParams}{Parameters}
+{\em section} & The section to select\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 78 of file Client\+Controller.\+cs.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_client_controller_a316cbbcc2be45d34bfce1d55e159c87a}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_client_controller_a316cbbcc2be45d34bfce1d55e159c87a}} 
+\index{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ClientController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ClientController}!kitchenController@{kitchenController}}
+\index{kitchenController@{kitchenController}!SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ClientController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ClientController}}
+\doxysubsubsection{\texorpdfstring{kitchenController}{kitchenController}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller}{Kitchen\+Controller}} Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Scenes.\+Kitchen.\+Client\+Controller.\+kitchen\+Controller}
+
+
+
+The kitchen controller 
+
+
+
+Definition at line 27 of file Client\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_client_controller_adf7917f05e53e7aabe9c49569620305b}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_client_controller_adf7917f05e53e7aabe9c49569620305b}} 
+\index{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ClientController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ClientController}!playerController@{playerController}}
+\index{playerController@{playerController}!SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ClientController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ClientController}}
+\doxysubsubsection{\texorpdfstring{playerController}{playerController}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller}{Player\+Controller}} Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Scenes.\+Kitchen.\+Client\+Controller.\+player\+Controller}
+
+
+
+The client\textquotesingle{}s player 
+
+
+
+Definition at line 22 of file Client\+Controller.\+cs.
 
 
 

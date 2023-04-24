@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['panelconfigurationbuttons_155',['panelConfigurationButtons',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller.html#a89fa09006e00706ac080579bd5a9bdc9',1,'SnowMeltArcade::ProjectKitchen::Scenes::NetworkConnect::UIConfigurationController']]],
-  ['panelconnecttoserverdetails_156',['panelConnectToServerDetails',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller.html#aadc1fe72c7c0ee44995750cac12e1303',1,'SnowMeltArcade::ProjectKitchen::Scenes::NetworkConnect::UIConfigurationController']]],
-  ['panelserverdetails_157',['panelServerDetails',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller.html#aa41b995f3c45645294b1a9eb235db0b3',1,'SnowMeltArcade::ProjectKitchen::Scenes::NetworkConnect::UIConfigurationController']]],
-  ['panelwaitingforserver_158',['panelWaitingForServer',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller.html#a80fac25c5f7bb998768f1fd54c30bfe6',1,'SnowMeltArcade::ProjectKitchen::Scenes::NetworkConnect::UIConfigurationController']]]
+  ['kitchencontroller_288',['kitchenController',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_client_controller.html#a316cbbcc2be45d34bfce1d55e159c87a',1,'SnowMeltArcade::ProjectKitchen::Scenes::Kitchen::ClientController']]]
 ];

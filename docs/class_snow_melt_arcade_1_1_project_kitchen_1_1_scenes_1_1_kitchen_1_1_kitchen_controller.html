@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('class_snow_melt_arcade_1_1_project_kit
 </div><!--header-->
 <div class="contents">
 
-<p>Manages the kitchen level and networking between the server and clients  
+<p>Manages the kitchen level and networking between the server and clients. This is designed to run in server space.  
  <a href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.KitchenController:</div>
@@ -103,6 +103,16 @@ Inheritance diagram for SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.KitchenCont
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a16b095ec89bb3c7ed4d53061063709de"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html#a16b095ec89bb3c7ed4d53061063709de">OnNetworkSpawn</a> ()</td></tr>
 <tr class="separator:a16b095ec89bb3c7ed4d53061063709de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28cdb6fa67227dcfafb8de8a1e139f4a"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html#a28cdb6fa67227dcfafb8de8a1e139f4a">OnNetworkDespawn</a> ()</td></tr>
+<tr class="separator:a28cdb6fa67227dcfafb8de8a1e139f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74888b9d27a0bd9e70493fe0e1dd8d69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html#a74888b9d27a0bd9e70493fe0e1dd8d69">ActivateWorkstation</a> (<a class="el" href="struct_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_spawned_object_id.html">SpawnedObjectId</a> workstationId)</td></tr>
+<tr class="memdesc:a74888b9d27a0bd9e70493fe0e1dd8d69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activates the passed workstation  <a href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html#a74888b9d27a0bd9e70493fe0e1dd8d69">More...</a><br /></td></tr>
+<tr class="separator:a74888b9d27a0bd9e70493fe0e1dd8d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af81c09de37d1a7c096f74224ff2f5726"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html#af81c09de37d1a7c096f74224ff2f5726">SelectWorkstationSectionServerRpc</a> (<a class="el" href="struct_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_spawned_object_id.html">SpawnedObjectId</a> sectionId, ServerRpcParams rpcParams=default)</td></tr>
+<tr class="memdesc:af81c09de37d1a7c096f74224ff2f5726"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects the passed workstation section  <a href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html#af81c09de37d1a7c096f74224ff2f5726">More...</a><br /></td></tr>
+<tr class="separator:af81c09de37d1a7c096f74224ff2f5726"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e87d37c6c973972f2003d541b3bc5d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html#a4e87d37c6c973972f2003d541b3bc5d2">OnValidate</a> ()</td></tr>
+<tr class="separator:a4e87d37c6c973972f2003d541b3bc5d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -112,12 +122,84 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a3f3ce9d12e755f121e3ba16be0bcb4b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_client_controller.html">ClientController</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html#a3f3ce9d12e755f121e3ba16be0bcb4b6">clientController</a></td></tr>
 <tr class="memdesc:a3f3ce9d12e755f121e3ba16be0bcb4b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manages the connected clients  <a href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html#a3f3ce9d12e755f121e3ba16be0bcb4b6">More...</a><br /></td></tr>
 <tr class="separator:a3f3ce9d12e755f121e3ba16be0bcb4b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2d4f5cc37216737e0b2a9ca6be0f8e0"><td class="memItemLeft" align="right" valign="top">Vector2Int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html#ab2d4f5cc37216737e0b2a9ca6be0f8e0">workstationGridSize</a></td></tr>
+<tr class="memdesc:ab2d4f5cc37216737e0b2a9ca6be0f8e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of the workstation grid  <a href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html#ab2d4f5cc37216737e0b2a9ca6be0f8e0">More...</a><br /></td></tr>
+<tr class="separator:ab2d4f5cc37216737e0b2a9ca6be0f8e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f49ff68a32bd3fb9196b404c627d9ef"><td class="memItemLeft" align="right" valign="top">Vector2Int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html#a7f49ff68a32bd3fb9196b404c627d9ef">workstationSectionGridSize</a></td></tr>
+<tr class="memdesc:a7f49ff68a32bd3fb9196b404c627d9ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of the section grid on a workstation  <a href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html#a7f49ff68a32bd3fb9196b404c627d9ef">More...</a><br /></td></tr>
+<tr class="separator:a7f49ff68a32bd3fb9196b404c627d9ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fb75b1ded8610795b1dd69917b04a56"><td class="memItemLeft" align="right" valign="top">List&lt; Vector2Int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html#a1fb75b1ded8610795b1dd69917b04a56">workstationLocations</a></td></tr>
+<tr class="memdesc:a1fb75b1ded8610795b1dd69917b04a56"><td class="mdescLeft">&#160;</td><td class="mdescRight">The locations of the workstations  <a href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html#a1fb75b1ded8610795b1dd69917b04a56">More...</a><br /></td></tr>
+<tr class="separator:a1fb75b1ded8610795b1dd69917b04a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Manages the kitchen level and networking between the server and clients </p>
+<div class="textblock"><p>Manages the kitchen level and networking between the server and clients. This is designed to run in server space. </p>
 
-<p class="definition">Definition at line <a class="el" href="_kitchen_controller_8cs_source.html#l00010">10</a> of file <a class="el" href="_kitchen_controller_8cs_source.html">KitchenController.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_kitchen_controller_8cs_source.html#l00016">16</a> of file <a class="el" href="_kitchen_controller_8cs_source.html">KitchenController.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a74888b9d27a0bd9e70493fe0e1dd8d69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74888b9d27a0bd9e70493fe0e1dd8d69">&#9670;&nbsp;</a></span>ActivateWorkstation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.KitchenController.ActivateWorkstation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_spawned_object_id.html">SpawnedObjectId</a>&#160;</td>
+          <td class="paramname"><em>workstationId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Activates the passed workstation </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">workstationId</td><td>The id of the workstation to activate</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_kitchen_controller_8cs_source.html#l00086">86</a> of file <a class="el" href="_kitchen_controller_8cs_source.html">KitchenController.cs</a>.</p>
+
+</div>
+</div>
+<a id="a28cdb6fa67227dcfafb8de8a1e139f4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28cdb6fa67227dcfafb8de8a1e139f4a">&#9670;&nbsp;</a></span>OnNetworkDespawn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.KitchenController.OnNetworkDespawn </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_kitchen_controller_8cs_source.html#l00075">75</a> of file <a class="el" href="_kitchen_controller_8cs_source.html">KitchenController.cs</a>.</p>
+
+</div>
+</div>
 <a id="a16b095ec89bb3c7ed4d53061063709de"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a16b095ec89bb3c7ed4d53061063709de">&#9670;&nbsp;</a></span>OnNetworkSpawn()</h2>
 
@@ -141,7 +223,74 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_kitchen_controller_8cs_source.html#l00028">28</a> of file <a class="el" href="_kitchen_controller_8cs_source.html">KitchenController.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_kitchen_controller_8cs_source.html#l00054">54</a> of file <a class="el" href="_kitchen_controller_8cs_source.html">KitchenController.cs</a>.</p>
+
+</div>
+</div>
+<a id="a4e87d37c6c973972f2003d541b3bc5d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e87d37c6c973972f2003d541b3bc5d2">&#9670;&nbsp;</a></span>OnValidate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.KitchenController.OnValidate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_kitchen_controller_8cs_source.html#l00129">129</a> of file <a class="el" href="_kitchen_controller_8cs_source.html">KitchenController.cs</a>.</p>
+
+</div>
+</div>
+<a id="af81c09de37d1a7c096f74224ff2f5726"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af81c09de37d1a7c096f74224ff2f5726">&#9670;&nbsp;</a></span>SelectWorkstationSectionServerRpc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.KitchenController.SelectWorkstationSectionServerRpc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_spawned_object_id.html">SpawnedObjectId</a>&#160;</td>
+          <td class="paramname"><em>sectionId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ServerRpcParams&#160;</td>
+          <td class="paramname"><em>rpcParams</em> = <code>default</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Selects the passed workstation section </p>
+
+<p class="definition">Definition at line <a class="el" href="_kitchen_controller_8cs_source.html#l00103">103</a> of file <a class="el" href="_kitchen_controller_8cs_source.html">KitchenController.cs</a>.</p>
 
 </div>
 </div>
@@ -160,7 +309,7 @@ Public Attributes</h2></td></tr>
 
 <p>Manages the connected clients </p>
 
-<p class="definition">Definition at line <a class="el" href="_kitchen_controller_8cs_source.html#l00022">22</a> of file <a class="el" href="_kitchen_controller_8cs_source.html">KitchenController.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_kitchen_controller_8cs_source.html#l00028">28</a> of file <a class="el" href="_kitchen_controller_8cs_source.html">KitchenController.cs</a>.</p>
 
 </div>
 </div>
@@ -178,7 +327,61 @@ Public Attributes</h2></td></tr>
 
 <p>Manages spawning objects </p>
 
-<p class="definition">Definition at line <a class="el" href="_kitchen_controller_8cs_source.html#l00017">17</a> of file <a class="el" href="_kitchen_controller_8cs_source.html">KitchenController.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_kitchen_controller_8cs_source.html#l00023">23</a> of file <a class="el" href="_kitchen_controller_8cs_source.html">KitchenController.cs</a>.</p>
+
+</div>
+</div>
+<a id="ab2d4f5cc37216737e0b2a9ca6be0f8e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2d4f5cc37216737e0b2a9ca6be0f8e0">&#9670;&nbsp;</a></span>workstationGridSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector2Int SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.KitchenController.workstationGridSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The size of the workstation grid </p>
+
+<p class="definition">Definition at line <a class="el" href="_kitchen_controller_8cs_source.html#l00033">33</a> of file <a class="el" href="_kitchen_controller_8cs_source.html">KitchenController.cs</a>.</p>
+
+</div>
+</div>
+<a id="a1fb75b1ded8610795b1dd69917b04a56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fb75b1ded8610795b1dd69917b04a56">&#9670;&nbsp;</a></span>workstationLocations</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;Vector2Int&gt; SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.KitchenController.workstationLocations</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The locations of the workstations </p>
+
+<p class="definition">Definition at line <a class="el" href="_kitchen_controller_8cs_source.html#l00048">48</a> of file <a class="el" href="_kitchen_controller_8cs_source.html">KitchenController.cs</a>.</p>
+
+</div>
+</div>
+<a id="a7f49ff68a32bd3fb9196b404c627d9ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f49ff68a32bd3fb9196b404c627d9ef">&#9670;&nbsp;</a></span>workstationSectionGridSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector2Int SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.KitchenController.workstationSectionGridSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The size of the section grid on a workstation </p>
+
+<p class="definition">Definition at line <a class="el" href="_kitchen_controller_8cs_source.html#l00038">38</a> of file <a class="el" href="_kitchen_controller_8cs_source.html">KitchenController.cs</a>.</p>
 
 </div>
 </div>

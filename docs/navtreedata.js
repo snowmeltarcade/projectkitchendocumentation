@@ -40,14 +40,19 @@ var NAVTREE =
       ] ]
     ] ],
     [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ]
+      [ "File List", "files.html", "files_dup" ],
+      [ "File Members", "globals.html", [
+        [ "All", "globals.html", null ],
+        [ "Typedefs", "globals_type.html", null ]
+      ] ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"_authentication_manager_8cs.html"
+"_authentication_manager_8cs.html",
+"struct_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_spawned_object_id.html#a067e9a5cdfc48b31f30942eedd393da4"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
