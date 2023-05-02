@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['workstationclientdata_2ecs_224',['WorkstationClientData.cs',['../_workstation_client_data_8cs.html',1,'']]],
-  ['workstationgrid_2ecs_225',['WorkstationGrid.cs',['../_workstation_grid_8cs.html',1,'']]],
-  ['workstationsectioncontroller_2ecs_226',['WorkstationSectionController.cs',['../_workstation_section_controller_8cs.html',1,'']]],
-  ['workstationsectiongrid_2ecs_227',['WorkstationSectionGrid.cs',['../_workstation_section_grid_8cs.html',1,'']]]
+  ['uiconfigurationcontroller_2ecs_236',['UIConfigurationController.cs',['../_u_i_configuration_controller_8cs.html',1,'']]],
+  ['uicontroller_2ecs_237',['UIController.cs',['../_u_i_controller_8cs.html',1,'']]],
+  ['uisigningincontroller_2ecs_238',['UISigningInController.cs',['../_u_i_signing_in_controller_8cs.html',1,'']]]
 ];

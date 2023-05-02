@@ -5,8 +5,9 @@ var searchData=
   ['addworkstation_2',['AddWorkstation',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_grid.html#a0dc930fd3e2eb784974f06288f6946fe',1,'SnowMeltArcade::ProjectKitchen::Kitchen::WorkstationGrid']]],
   ['arelocationsvalid_3',['AreLocationsValid',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_grid.html#a67353a768667bee0077311e3ac66f653',1,'SnowMeltArcade::ProjectKitchen::Kitchen::WorkstationGrid']]],
   ['assignclientstoworkstations_4',['AssignClientsToWorkstations',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_client_controller.html#a5ed016c8d6188d2518da39b4d7b6905b',1,'SnowMeltArcade::ProjectKitchen::Scenes::Kitchen::ClientController']]],
-  ['assignedfood_5',['AssignedFood',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_section_controller.html#abe0eee30fe33de4f8193802f3f2000a0',1,'SnowMeltArcade::ProjectKitchen::Kitchen::WorkstationSectionController']]],
-  ['assignfood_6',['AssignFood',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_section_controller.html#a116b10f17c694e549a19575a09009b52',1,'SnowMeltArcade::ProjectKitchen::Kitchen::WorkstationSectionController']]],
-  ['assigntoworkstation_7',['AssignToWorkstation',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller.html#aa97b1964a56529a8769b2bfd3458e1fc',1,'SnowMeltArcade::ProjectKitchen::Scenes::Kitchen::PlayerController']]],
-  ['authenticationmanager_2ecs_8',['AuthenticationManager.cs',['../_authentication_manager_8cs.html',1,'']]]
+  ['assignclienttoworkstation_5',['AssignClientToWorkstation',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_client_controller.html#a826c3e857d8ece315542bd153e2e132d',1,'SnowMeltArcade::ProjectKitchen::Scenes::Kitchen::ClientController']]],
+  ['assignedfood_6',['AssignedFood',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_section_controller.html#abe0eee30fe33de4f8193802f3f2000a0',1,'SnowMeltArcade::ProjectKitchen::Kitchen::WorkstationSectionController']]],
+  ['assignfood_7',['AssignFood',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_section_controller.html#a116b10f17c694e549a19575a09009b52',1,'SnowMeltArcade::ProjectKitchen::Kitchen::WorkstationSectionController']]],
+  ['assigntoworkstation_8',['AssignToWorkstation',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller.html#aa97b1964a56529a8769b2bfd3458e1fc',1,'SnowMeltArcade::ProjectKitchen::Scenes::Kitchen::PlayerController']]],
+  ['authenticationmanager_2ecs_9',['AuthenticationManager.cs',['../_authentication_manager_8cs.html',1,'']]]
 ];

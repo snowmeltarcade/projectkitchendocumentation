@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['objectspawncontroller_291',['objectSpawnController',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html#abb971e9c544be7ad408234954f205bd7',1,'SnowMeltArcade::ProjectKitchen::Scenes::Kitchen::KitchenController']]]
+  ['networkmanager_310',['networkManager',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_scene_controller.html#af17448844b560e027e7b8e66eccc4303',1,'SnowMeltArcade::ProjectKitchen::Scenes::NetworkConnect::SceneController']]]
 ];

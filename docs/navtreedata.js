@@ -52,7 +52,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_authentication_manager_8cs.html",
-"struct_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_spawned_object_id.html#a067e9a5cdfc48b31f30942eedd393da4"
+"interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_i_food.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

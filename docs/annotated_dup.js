@@ -2,11 +2,6 @@ var annotated_dup =
 [
     [ "SnowMeltArcade", "namespace_snow_melt_arcade.html", [
       [ "ProjectKitchen", "namespace_snow_melt_arcade_1_1_project_kitchen.html", [
-        [ "Editor", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_editor.html", [
-          [ "EditorWindows", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_editor_1_1_editor_windows.html", [
-            [ "RunGameEditorWindow", "class_snow_melt_arcade_1_1_project_kitchen_1_1_editor_1_1_editor_windows_1_1_run_game_editor_window.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_editor_1_1_editor_windows_1_1_run_game_editor_window" ]
-          ] ]
-        ] ],
         [ "Kitchen", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen.html", [
           [ "ClientState", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_client_state.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_client_state" ],
           [ "IFood", "interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_i_food.html", "interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_i_food" ],
@@ -29,6 +24,7 @@ var annotated_dup =
             ] ]
           ] ],
           [ "Kitchen", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen.html", [
+            [ "CameraController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_camera_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_camera_controller" ],
             [ "ClientController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_client_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_client_controller" ],
             [ "KitchenController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller" ],
             [ "ObjectSpawnController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller" ],
@@ -46,6 +42,10 @@ var annotated_dup =
           [ "Startup", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_startup.html", [
             [ "StartupController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_startup_1_1_startup_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_startup_1_1_startup_controller" ]
           ] ]
+        ] ],
+        [ "Utils", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_utils.html", [
+          [ "TimedValueLerpFloat", "class_snow_melt_arcade_1_1_project_kitchen_1_1_utils_1_1_timed_value_lerp_float.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_utils_1_1_timed_value_lerp_float" ],
+          [ "TimedValueLerpVector3", "class_snow_melt_arcade_1_1_project_kitchen_1_1_utils_1_1_timed_value_lerp_vector3.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_utils_1_1_timed_value_lerp_vector3" ]
         ] ]
       ] ]
     ] ]

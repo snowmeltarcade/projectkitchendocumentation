@@ -5,6 +5,7 @@ var class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitche
     [ "OnNetworkSpawn", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html#a16b095ec89bb3c7ed4d53061063709de", null ],
     [ "OnValidate", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html#a4e87d37c6c973972f2003d541b3bc5d2", null ],
     [ "SelectWorkstationSectionServerRpc", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html#af81c09de37d1a7c096f74224ff2f5726", null ],
+    [ "SelectWorkstationServerRpc", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html#aef3984737e8f69292bce0e72f51d41b0", null ],
     [ "clientController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html#a3f3ce9d12e755f121e3ba16be0bcb4b6", null ],
     [ "objectSpawnController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html#abb971e9c544be7ad408234954f205bd7", null ],
     [ "workstationGridSize", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html#ab2d4f5cc37216737e0b2a9ca6be0f8e0", null ],
