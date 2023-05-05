@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['defaultmaterial_303',['defaultMaterial',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_section_controller.html#a54bc6b429ad63cee17289e42af16d0b6',1,'SnowMeltArcade::ProjectKitchen::Kitchen::WorkstationSectionController']]]
+  ['clientcontroller_290',['clientController',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html#a3f3ce9d12e755f121e3ba16be0bcb4b6',1,'SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.KitchenController.clientController()'],['../class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller.html#a713f9f6710ab727bdacf68a8ca798cfa',1,'SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.PlayerController.clientController()']]],
+  ['configurationcontroller_291',['configurationController',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_controller.html#a0c737456106d7551c3998263e94133c3',1,'SnowMeltArcade::ProjectKitchen::Scenes::NetworkConnect::UIController']]]
 ];

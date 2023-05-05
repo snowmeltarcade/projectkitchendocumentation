@@ -23,11 +23,5 @@ var dir_ebdc890f8f46ec25a77c537cbc16a125 =
     ] ],
     [ "WorkstationGrid.cs", "_workstation_grid_8cs.html", [
       [ "WorkstationGrid", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_grid.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_grid" ]
-    ] ],
-    [ "WorkstationSectionController.cs", "_workstation_section_controller_8cs.html", [
-      [ "WorkstationSectionController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_section_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_section_controller" ]
-    ] ],
-    [ "WorkstationSectionGrid.cs", "_workstation_section_grid_8cs.html", [
-      [ "WorkstationSectionGrid", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_section_grid.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_section_grid" ]
     ] ]
 ];

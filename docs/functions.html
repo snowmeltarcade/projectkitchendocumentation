@@ -91,6 +91,8 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <li>ActivateWorkstation()
 : <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_client_controller.html#a4332e72a58172c2f79b7c1a0e11d4f4b">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ClientController</a>
 , <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html#a74888b9d27a0bd9e70493fe0e1dd8d69">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.KitchenController</a>
+, <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller.html#a5b42ace278a1b6d547d8f659aa99527c">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.PlayerController</a>
+, <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_u_i_controller.html#ae6ba4998f7ee0b1bd1bb00ae16fedff9">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.UIController</a>
 </li>
 <li>AddWorkstation()
 : <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_grid.html#a0dc930fd3e2eb784974f06288f6946fe">SnowMeltArcade.ProjectKitchen.Kitchen.WorkstationGrid</a>
@@ -104,12 +106,6 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <li>AssignClientToWorkstation()
 : <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_client_controller.html#a826c3e857d8ece315542bd153e2e132d">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ClientController</a>
 </li>
-<li>AssignedFood
-: <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_section_controller.html#abe0eee30fe33de4f8193802f3f2000a0">SnowMeltArcade.ProjectKitchen.Kitchen.WorkstationSectionController</a>
-</li>
-<li>AssignFood()
-: <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_section_controller.html#a116b10f17c694e549a19575a09009b52">SnowMeltArcade.ProjectKitchen.Kitchen.WorkstationSectionController</a>
-</li>
 <li>AssignToWorkstation()
 : <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller.html#aa97b1964a56529a8769b2bfd3458e1fc">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.PlayerController</a>
 </li>
@@ -120,14 +116,19 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <li>BeginServerGame()
 : <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_scene_controller.html#a5162ce64a05985b35731a5edb7372d36">SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.SceneController</a>
 </li>
-<li>BuildSectionGrid()
-: <a class="el" href="interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_i_workstation.html#a6612a721c39ff6a610d8c40da4f9fc62">SnowMeltArcade.ProjectKitchen.Kitchen.IWorkstation</a>
-, <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_pantry_workstation_controller.html#a1e3bee5b9b91a670d37d8cfd16a4b08f">SnowMeltArcade.ProjectKitchen.Kitchen.PantryWorkstationController</a>
+<li>buttonActivateWorkstation
+: <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_u_i_controller.html#aa2757252466eac6ca922f55cbcca9946">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.UIController</a>
+</li>
+<li>buttontext
+: <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_u_i_controller.html#ad9e83a1a0a629c4cbecfb0683d1f9c12">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.UIController</a>
 </li>
 </ul>
 
 
 <h3><a id="index_c"></a>- c -</h3><ul>
+<li>CanActivateWorkstation()
+: <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_u_i_controller.html#acad02b08c96802c3e1239c3e4cc6543d">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.UIController</a>
+</li>
 <li>clientController
 : <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html#a3f3ce9d12e755f121e3ba16be0bcb4b6">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.KitchenController</a>
 , <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller.html#a713f9f6710ab727bdacf68a8ca798cfa">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.PlayerController</a>
@@ -157,16 +158,12 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 </ul>
 
 
-<h3><a id="index_d"></a>- d -</h3><ul>
-<li>defaultMaterial
-: <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_section_controller.html#a54bc6b429ad63cee17289e42af16d0b6">SnowMeltArcade.ProjectKitchen.Kitchen.WorkstationSectionController</a>
-</li>
-</ul>
-
-
 <h3><a id="index_e"></a>- e -</h3><ul>
 <li>Empty
 : <a class="el" href="struct_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_spawned_object_id.html#a841f4df8f14e7025f01e9dc28b6f0e0f">SnowMeltArcade.ProjectKitchen.Kitchen.SpawnedObjectId</a>
+</li>
+<li>EnableTouchControls()
+: <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_u_i_controller.html#a7ae4396b0abc820fb564e7dcf753a87b">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.UIController</a>
 </li>
 <li>Equals()
 : <a class="el" href="struct_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_spawned_object_id.html#a067e9a5cdfc48b31f30942eedd393da4">SnowMeltArcade.ProjectKitchen.Kitchen.SpawnedObjectId</a>
@@ -175,12 +172,6 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 
 
 <h3><a id="index_f"></a>- f -</h3><ul>
-<li>FindEmptySection()
-: <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_section_grid.html#ae053f1344ef24739e2d3f1fbd555b71c">SnowMeltArcade.ProjectKitchen.Kitchen.WorkstationSectionGrid</a>
-</li>
-<li>FindWorkstationSectionWithId()
-: <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller.html#ac5bf4e2ac44b5af593a807fc91db559b">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectSpawnController</a>
-</li>
 <li>FindWorkstationWithId()
 : <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller.html#acf6d6df373dcecfa7209c5f88e6f5389">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectSpawnController</a>
 </li>
@@ -189,6 +180,9 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 </li>
 <li>foodPrefab
 : <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller.html#a1c9d49160876fbc355fba85baa83ccab">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectSpawnController</a>
+</li>
+<li>foodSpawnTransform
+: <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_pantry_workstation_controller.html#ada9a0e09b5b96adb204a2d22cc5c32d3">SnowMeltArcade.ProjectKitchen.Kitchen.PantryWorkstationController</a>
 </li>
 </ul>
 
@@ -222,19 +216,12 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 
 <h3><a id="index_i"></a>- i -</h3><ul>
 <li>Id
-: <a class="el" href="interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_i_food.html#a80b468b949a8f1c6bbe1c07de368c37d">SnowMeltArcade.ProjectKitchen.Kitchen.IFood</a>
+: <a class="el" href="interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_i_food.html#a8ac444f3ecc01b1bcfd32eae66b51495">SnowMeltArcade.ProjectKitchen.Kitchen.IFood</a>
 , <a class="el" href="interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_i_workstation.html#a3ca77b098b27e471a0b2d01fa5c4ae55">SnowMeltArcade.ProjectKitchen.Kitchen.IWorkstation</a>
 , <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_pantry_workstation_controller.html#a04be121e39e238dcdedca0b75ea852dc">SnowMeltArcade.ProjectKitchen.Kitchen.PantryWorkstationController</a>
-, <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller.html#ac24a49f60c73a68c38bd7b90e9ef4f51">SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController</a>
+, <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller.html#ae1acf00c9141d874396b8f61ec56539f">SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController</a>
 , <a class="el" href="struct_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_spawned_object_id.html#ab2b03e932f07339419f15594488b70f7">SnowMeltArcade.ProjectKitchen.Kitchen.SpawnedObjectId</a>
 , <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_client_data.html#a81324abf48278ff4f43e8f68e3d976a7">SnowMeltArcade.ProjectKitchen.Kitchen.WorkstationClientData</a>
-, <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_section_controller.html#ad9a72c43218a0ac017403b929368a9eb">SnowMeltArcade.ProjectKitchen.Kitchen.WorkstationSectionController</a>
-</li>
-<li>IsEmpty
-: <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_section_controller.html#a19a75474a4f0776953d4660fe4fcb9ef">SnowMeltArcade.ProjectKitchen.Kitchen.WorkstationSectionController</a>
-</li>
-<li>IsSelected
-: <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_section_controller.html#abcce263186a04ee3566b8ac2825c8bac">SnowMeltArcade.ProjectKitchen.Kitchen.WorkstationSectionController</a>
 </li>
 </ul>
 
@@ -266,9 +253,6 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 
 
 <h3><a id="index_m"></a>- m -</h3><ul>
-<li>mesh
-: <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_section_controller.html#a4e8b4e710f7af1294d4e1c804d7d3cfe">SnowMeltArcade.ProjectKitchen.Kitchen.WorkstationSectionController</a>
-</li>
 <li>MoveToSelectWorkstation()
 : <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_camera_controller.html#a36ef98f20f6d0964ec870740da54f77f">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.CameraController</a>
 </li>
@@ -296,16 +280,20 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <li>OnActivate()
 : <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller.html#a13d08e055cde48e7be4f04fab45fe659">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.PlayerController</a>
 </li>
+<li>OnEnable()
+: <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller.html#a9b3285a46f9379d3572c3697ef9c4bc7">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.PlayerController</a>
+</li>
 <li>OnMousePosition()
 : <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller.html#ae6b099b40c249666de0d7524c81a32e5">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.PlayerController</a>
 </li>
 <li>OnNetworkDespawn()
-: <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_section_controller.html#a5a7ab41b37bb013e9114bda82ce10bf1">SnowMeltArcade.ProjectKitchen.Kitchen.WorkstationSectionController</a>
-, <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html#a28cdb6fa67227dcfafb8de8a1e139f4a">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.KitchenController</a>
+: <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html#a28cdb6fa67227dcfafb8de8a1e139f4a">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.KitchenController</a>
 </li>
 <li>OnNetworkSpawn()
-: <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_section_controller.html#ac26240e83037a4f1801c5595ea6015d2">SnowMeltArcade.ProjectKitchen.Kitchen.WorkstationSectionController</a>
-, <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html#a16b095ec89bb3c7ed4d53061063709de">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.KitchenController</a>
+: <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html#a16b095ec89bb3c7ed4d53061063709de">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.KitchenController</a>
+</li>
+<li>OnSelectFood()
+: <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller.html#af40f45ce77958c8c03e0b628730be8a8">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.PlayerController</a>
 </li>
 <li>OnSelectWorkstation()
 : <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller.html#abd68c5273eb85f08823e3cd6006740a8">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.PlayerController</a>
@@ -345,6 +333,7 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 </li>
 <li>playerController
 : <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_client_controller.html#adf7917f05e53e7aabe9c49569620305b">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ClientController</a>
+, <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_u_i_controller.html#a74f32133ae318fa4c7095b389e61e6e1">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.UIController</a>
 </li>
 <li>Position
 : <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_client_data.html#a7edcc82bf90e4bfa714c089b23bb105d">SnowMeltArcade.ProjectKitchen.Kitchen.WorkstationClientData</a>
@@ -353,9 +342,6 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 
 
 <h3><a id="index_s"></a>- s -</h3><ul>
-<li>selectedMaterial
-: <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_section_controller.html#a9dd1dbccf51c7b5c764d718bb255af2d">SnowMeltArcade.ProjectKitchen.Kitchen.WorkstationSectionController</a>
-</li>
 <li>SelectedWorkstationSections
 : <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_client_state.html#aed7d156cff3c14b9b32d029a0d10cc1f">SnowMeltArcade.ProjectKitchen.Kitchen.ClientState</a>
 </li>
@@ -367,12 +353,6 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 </li>
 <li>selectWorkstationPosition
 : <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_camera_controller.html#a6966431121ea10846d437bb895d9d68f">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.CameraController</a>
-</li>
-<li>SelectWorkstationSection()
-: <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_client_controller.html#a2e40842cb06e7e95a2bf5e515237346a">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ClientController</a>
-</li>
-<li>SelectWorkstationSectionServerRpc()
-: <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html#af81c09de37d1a7c096f74224ff2f5726">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.KitchenController</a>
 </li>
 <li>SelectWorkstationServerRpc()
 : <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html#aef3984737e8f69292bce0e72f51d41b0">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.KitchenController</a>
@@ -406,13 +386,10 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 : <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_controller.html#aa07868dd842df47675b2d86cf5a68564">SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.UIController</a>
 </li>
 <li>SpawnFood()
-: <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller.html#a9de0581b921b41c2015142e83f134ada">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectSpawnController</a>
+: <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller.html#afc54ccd98492685eb85282ebdaaa8f0f">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectSpawnController</a>
 </li>
 <li>SpawnWorkstations()
 : <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller.html#aea1b2e7179ab06c1f5b2f45a2f88712b">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectSpawnController</a>
-</li>
-<li>SpawnWorkstationSection()
-: <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller.html#a38fd88ed184541ecd9afe51cfa3861d2">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectSpawnController</a>
 </li>
 <li>Start()
 : <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_bootstrap_kitchen_1_1_scene_controller.html#a2cec989ef6d697fdb250753e60efb12d">SnowMeltArcade.ProjectKitchen.Scenes.Dev.BootstrapKitchen.SceneController</a>
@@ -448,7 +425,8 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 
 <h3><a id="index_u"></a>- u -</h3><ul>
 <li>uiController
-: <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_scene_controller.html#a6e19c10a92a7ee08ab9a6ce78bb86fc2">SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.SceneController</a>
+: <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller.html#a84be078a063500dc5f9474f3f18184f0">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.PlayerController</a>
+, <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_scene_controller.html#a6e19c10a92a7ee08ab9a6ce78bb86fc2">SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.SceneController</a>
 </li>
 <li>Update()
 : <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_utils_1_1_timed_value_lerp_float.html#a9f52bfb7f131b3dd838c39339d610ce7">SnowMeltArcade.ProjectKitchen.Utils.TimedValueLerpFloat</a>
@@ -482,17 +460,11 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <li>Workstations
 : <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller.html#a57fc5a79063cbb30326ef78e928eebe8">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectSpawnController</a>
 </li>
-<li>WorkstationSectionGrid()
-: <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_section_grid.html#afaa0cad4735d2788b3a8927a966d4d73">SnowMeltArcade.ProjectKitchen.Kitchen.WorkstationSectionGrid</a>
-</li>
 <li>workstationSectionGridSize
 : <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html#a7f49ff68a32bd3fb9196b404c627d9ef">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.KitchenController</a>
 </li>
 <li>workstationSectionPrefab
 : <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller.html#a4d2329382efeee3dd072a9a0b326926e">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectSpawnController</a>
-</li>
-<li>WorkstationSections
-: <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller.html#a6887752099d4fa7de4c35f0a31d86eda">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectSpawnController</a>
 </li>
 <li>workstationsParent
 : <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller.html#a44e0ab7fb272de9e5b2e95291e1f8b43">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectSpawnController</a>

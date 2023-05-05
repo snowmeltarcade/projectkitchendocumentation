@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['cameracontroller_12',['CameraController',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_camera_controller.html',1,'SnowMeltArcade::ProjectKitchen::Scenes::Kitchen']]],
-  ['cameracontroller_2ecs_13',['CameraController.cs',['../_camera_controller_8cs.html',1,'']]],
+  ['cameracontroller_11',['CameraController',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_camera_controller.html',1,'SnowMeltArcade::ProjectKitchen::Scenes::Kitchen']]],
+  ['cameracontroller_2ecs_12',['CameraController.cs',['../_camera_controller_8cs.html',1,'']]],
+  ['canactivateworkstation_13',['CanActivateWorkstation',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_u_i_controller.html#acad02b08c96802c3e1239c3e4cc6543d',1,'SnowMeltArcade::ProjectKitchen::Scenes::Kitchen::UIController']]],
   ['clientcontroller_14',['clientController',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller.html#a713f9f6710ab727bdacf68a8ca798cfa',1,'SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.PlayerController.clientController()'],['../class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html#a3f3ce9d12e755f121e3ba16be0bcb4b6',1,'SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.KitchenController.clientController()']]],
   ['clientcontroller_15',['ClientController',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_client_controller.html',1,'SnowMeltArcade::ProjectKitchen::Scenes::Kitchen']]],
   ['clientcontroller_2ecs_16',['ClientController.cs',['../_client_controller_8cs.html',1,'']]],

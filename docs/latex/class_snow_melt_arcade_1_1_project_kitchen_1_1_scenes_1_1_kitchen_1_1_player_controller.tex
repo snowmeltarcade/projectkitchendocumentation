@@ -14,13 +14,19 @@ Inheritance diagram for Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Scenes.\+Kitchen
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+void \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller_a9b3285a46f9379d3572c3697ef9c4bc7}{On\+Enable}} ()
+\item 
 void \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller_aa97b1964a56529a8769b2bfd3458e1fc}{Assign\+To\+Workstation}} (\mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_client_data}{Workstation\+Client\+Data}} client\+Data)
 \begin{DoxyCompactList}\small\item\em Assigns this player to the passed workstation \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller_a5b42ace278a1b6d547d8f659aa99527c}{Activate\+Workstation}} ()
+\begin{DoxyCompactList}\small\item\em Activates the selected workstation \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller_a13d08e055cde48e7be4f04fab45fe659}{On\+Activate}} ()
 \item 
 void \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller_ae6b099b40c249666de0d7524c81a32e5}{On\+Mouse\+Position}} (Input\+Value input\+Value)
 \item 
 void \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller_acb0d06b18d62144baec23a3048d0f362}{On\+Tap}} ()
+\item 
+void \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller_af40f45ce77958c8c03e0b628730be8a8}{On\+Select\+Food}} ()
 \item 
 void \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller_abd68c5273eb85f08823e3cd6006740a8}{On\+Select\+Workstation}} ()
 \end{DoxyCompactItemize}
@@ -30,7 +36,9 @@ void \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_
 \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_camera_controller}{Camera\+Controller}} \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller_ae667093848924d8f733a4a111f6e79d3}{player\+Camera}}
 \begin{DoxyCompactList}\small\item\em The camera this player controls \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_client_controller}{Client\+Controller}} \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller_a713f9f6710ab727bdacf68a8ca798cfa}{client\+Controller}}
-\begin{DoxyCompactList}\small\item\em The client controller \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The client controller \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_u_i_controller}{UIController}} \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller_a84be078a063500dc5f9474f3f18184f0}{ui\+Controller}}
+\begin{DoxyCompactList}\small\item\em The UI controller \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -43,6 +51,20 @@ Definition at line 11 of file Player\+Controller.\+cs.
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller_a5b42ace278a1b6d547d8f659aa99527c}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller_a5b42ace278a1b6d547d8f659aa99527c}} 
+\index{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.PlayerController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.PlayerController}!ActivateWorkstation@{ActivateWorkstation}}
+\index{ActivateWorkstation@{ActivateWorkstation}!SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.PlayerController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.PlayerController}}
+\doxysubsubsection{\texorpdfstring{ActivateWorkstation()}{ActivateWorkstation()}}
+{\footnotesize\ttfamily void Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Scenes.\+Kitchen.\+Player\+Controller.\+Activate\+Workstation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Activates the selected workstation 
+
+
+
+Definition at line 85 of file Player\+Controller.\+cs.
+
 \mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller_aa97b1964a56529a8769b2bfd3458e1fc}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller_aa97b1964a56529a8769b2bfd3458e1fc}} 
 \index{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.PlayerController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.PlayerController}!AssignToWorkstation@{AssignToWorkstation}}
 \index{AssignToWorkstation@{AssignToWorkstation}!SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.PlayerController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.PlayerController}}
@@ -60,7 +82,7 @@ Assigns this player to the passed workstation
 \end{DoxyParams}
 
 
-Definition at line 48 of file Player\+Controller.\+cs.
+Definition at line 69 of file Player\+Controller.\+cs.
 
 \mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller_a13d08e055cde48e7be4f04fab45fe659}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller_a13d08e055cde48e7be4f04fab45fe659}} 
 \index{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.PlayerController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.PlayerController}!OnActivate@{OnActivate}}
@@ -70,7 +92,17 @@ Definition at line 48 of file Player\+Controller.\+cs.
 
 
 
-Definition at line 62 of file Player\+Controller.\+cs.
+Definition at line 98 of file Player\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller_a9b3285a46f9379d3572c3697ef9c4bc7}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller_a9b3285a46f9379d3572c3697ef9c4bc7}} 
+\index{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.PlayerController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.PlayerController}!OnEnable@{OnEnable}}
+\index{OnEnable@{OnEnable}!SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.PlayerController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.PlayerController}}
+\doxysubsubsection{\texorpdfstring{OnEnable()}{OnEnable()}}
+{\footnotesize\ttfamily void Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Scenes.\+Kitchen.\+Player\+Controller.\+On\+Enable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 60 of file Player\+Controller.\+cs.
 
 \mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller_ae6b099b40c249666de0d7524c81a32e5}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller_ae6b099b40c249666de0d7524c81a32e5}} 
 \index{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.PlayerController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.PlayerController}!OnMousePosition@{OnMousePosition}}
@@ -80,7 +112,17 @@ Definition at line 62 of file Player\+Controller.\+cs.
 
 
 
-Definition at line 67 of file Player\+Controller.\+cs.
+Definition at line 103 of file Player\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller_af40f45ce77958c8c03e0b628730be8a8}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller_af40f45ce77958c8c03e0b628730be8a8}} 
+\index{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.PlayerController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.PlayerController}!OnSelectFood@{OnSelectFood}}
+\index{OnSelectFood@{OnSelectFood}!SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.PlayerController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.PlayerController}}
+\doxysubsubsection{\texorpdfstring{OnSelectFood()}{OnSelectFood()}}
+{\footnotesize\ttfamily void Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Scenes.\+Kitchen.\+Player\+Controller.\+On\+Select\+Food (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 121 of file Player\+Controller.\+cs.
 
 \mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller_abd68c5273eb85f08823e3cd6006740a8}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller_abd68c5273eb85f08823e3cd6006740a8}} 
 \index{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.PlayerController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.PlayerController}!OnSelectWorkstation@{OnSelectWorkstation}}
@@ -90,7 +132,7 @@ Definition at line 67 of file Player\+Controller.\+cs.
 
 
 
-Definition at line 84 of file Player\+Controller.\+cs.
+Definition at line 148 of file Player\+Controller.\+cs.
 
 \mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller_acb0d06b18d62144baec23a3048d0f362}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller_acb0d06b18d62144baec23a3048d0f362}} 
 \index{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.PlayerController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.PlayerController}!OnTap@{OnTap}}
@@ -100,7 +142,7 @@ Definition at line 84 of file Player\+Controller.\+cs.
 
 
 
-Definition at line 72 of file Player\+Controller.\+cs.
+Definition at line 111 of file Player\+Controller.\+cs.
 
 
 
@@ -132,6 +174,20 @@ The camera this player controls
 
 
 Definition at line 18 of file Player\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller_a84be078a063500dc5f9474f3f18184f0}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller_a84be078a063500dc5f9474f3f18184f0}} 
+\index{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.PlayerController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.PlayerController}!uiController@{uiController}}
+\index{uiController@{uiController}!SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.PlayerController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.PlayerController}}
+\doxysubsubsection{\texorpdfstring{uiController}{uiController}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_u_i_controller}{UIController}} Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Scenes.\+Kitchen.\+Player\+Controller.\+ui\+Controller}
+
+
+
+The UI controller 
+
+
+
+Definition at line 48 of file Player\+Controller.\+cs.
 
 
 

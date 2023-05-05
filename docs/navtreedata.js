@@ -26,7 +26,11 @@ var NAVTREE =
 [
   [ "Project Kitchen", "index.html", [
     [ "Namespaces", "namespaces.html", [
-      [ "Namespace List", "namespaces.html", "namespaces_dup" ]
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
+      [ "Namespace Members", "namespacemembers.html", [
+        [ "All", "namespacemembers.html", null ],
+        [ "Enumerations", "namespacemembers_enum.html", null ]
+      ] ]
     ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
@@ -52,7 +56,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_authentication_manager_8cs.html",
-"interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_i_food.html"
+"interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_i_workstation.html#a20288a45ede28cbce25cad769fffe969"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
