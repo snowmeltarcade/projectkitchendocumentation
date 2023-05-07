@@ -3,13 +3,19 @@ var annotated_dup =
     [ "SnowMeltArcade", "namespace_snow_melt_arcade.html", [
       [ "ProjectKitchen", "namespace_snow_melt_arcade_1_1_project_kitchen.html", [
         [ "Kitchen", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen.html", [
+          [ "WorkstationItems", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_items.html", [
+            [ "ChoppingBoardController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_items_1_1_chopping_board_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_items_1_1_chopping_board_controller" ],
+            [ "FoodAttachableController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_items_1_1_food_attachable_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_items_1_1_food_attachable_controller" ],
+            [ "IWorkstationItem", "interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_items_1_1_i_workstation_item.html", "interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_items_1_1_i_workstation_item" ],
+            [ "PantryController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_items_1_1_pantry_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_items_1_1_pantry_controller" ]
+          ] ],
           [ "ClientState", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_client_state.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_client_state" ],
           [ "IFood", "interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_i_food.html", "interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_i_food" ],
           [ "IWorkstation", "interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_i_workstation.html", "interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_i_workstation" ],
-          [ "PantryWorkstationController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_pantry_workstation_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_pantry_workstation_controller" ],
           [ "SomeFoodController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller" ],
           [ "SpawnedObjectId", "struct_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_spawned_object_id.html", "struct_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_spawned_object_id" ],
           [ "WorkstationClientData", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_client_data.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_client_data" ],
+          [ "WorkstationController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_controller" ],
           [ "WorkstationGrid", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_grid.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_grid" ]
         ] ],
         [ "Scene", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_scene.html", [

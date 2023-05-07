@@ -1,5 +1,10 @@
 \hypertarget{namespace_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen}{}\doxysection{Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Kitchen Namespace Reference}
 \label{namespace_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen}\index{SnowMeltArcade.ProjectKitchen.Kitchen@{SnowMeltArcade.ProjectKitchen.Kitchen}}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_items}{Workstation\+Items}}
+\end{DoxyCompactItemize}
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
@@ -9,13 +14,57 @@ interface \mbox{\hyperlink{interface_snow_melt_arcade_1_1_project_kitchen_1_1_ki
 \begin{DoxyCompactList}\small\item\em Provides an interface into the food\textquotesingle{}s functions \end{DoxyCompactList}\item 
 interface \mbox{\hyperlink{interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_i_workstation}{IWorkstation}}
 \begin{DoxyCompactList}\small\item\em Provides an interface into the workstation\textquotesingle{}s functions \end{DoxyCompactList}\item 
-class \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_pantry_workstation_controller}{Pantry\+Workstation\+Controller}}
-\begin{DoxyCompactList}\small\item\em Manages a workstation \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller}{Some\+Food\+Controller}}
 \begin{DoxyCompactList}\small\item\em Controls some kind of food \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{struct_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_spawned_object_id}{Spawned\+Object\+Id}}
 \begin{DoxyCompactList}\small\item\em An id of an object spawned by the {\ttfamily Object\+Spawn\+Controller} \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_client_data}{Workstation\+Client\+Data}}
 \begin{DoxyCompactList}\small\item\em Data a client needs to know about a workstation \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_controller}{Workstation\+Controller}}
+\begin{DoxyCompactList}\small\item\em Manages a workstation \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_grid}{Workstation\+Grid}}
 \begin{DoxyCompactList}\small\item\em Manages a kitchen\textquotesingle{}s workstation grid \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{namespace_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_af1de9533e7c32b9ea487ad99f364f0ca}{Food\+States}} \{ \mbox{\hyperlink{namespace_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_af1de9533e7c32b9ea487ad99f364f0caa7ddf961bfa9275c2054f28adccc8ab56}{Freeform}}
+, \mbox{\hyperlink{namespace_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_af1de9533e7c32b9ea487ad99f364f0caa688aeaf82485b3781c0b3953f3c8c7b5}{Player\+Selected}}
+, \mbox{\hyperlink{namespace_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_af1de9533e7c32b9ea487ad99f364f0caa9e21e1d259fb0a61254005c069c743a4}{Attached\+To\+Workstation\+Item}}
+, \mbox{\hyperlink{namespace_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_af1de9533e7c32b9ea487ad99f364f0caace2e5239d3c7f832dc72abb176060fd2}{Prepared\+On\+Workstation\+Item}}
+ \}
+\begin{DoxyCompactList}\small\item\em The state food can be in \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespace_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_af1de9533e7c32b9ea487ad99f364f0ca}\label{namespace_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_af1de9533e7c32b9ea487ad99f364f0ca}} 
+\index{SnowMeltArcade.ProjectKitchen.Kitchen@{SnowMeltArcade.ProjectKitchen.Kitchen}!FoodStates@{FoodStates}}
+\index{FoodStates@{FoodStates}!SnowMeltArcade.ProjectKitchen.Kitchen@{SnowMeltArcade.ProjectKitchen.Kitchen}}
+\doxysubsubsection{\texorpdfstring{FoodStates}{FoodStates}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_af1de9533e7c32b9ea487ad99f364f0ca}{Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Kitchen.\+Food\+States}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+The state food can be in 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Freeform@{Freeform}!SnowMeltArcade.ProjectKitchen.Kitchen@{SnowMeltArcade.ProjectKitchen.Kitchen}}\index{SnowMeltArcade.ProjectKitchen.Kitchen@{SnowMeltArcade.ProjectKitchen.Kitchen}!Freeform@{Freeform}}}\mbox{\Hypertarget{namespace_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_af1de9533e7c32b9ea487ad99f364f0caa7ddf961bfa9275c2054f28adccc8ab56}\label{namespace_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_af1de9533e7c32b9ea487ad99f364f0caa7ddf961bfa9275c2054f28adccc8ab56}} 
+Freeform&Not controlled by anything \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PlayerSelected@{PlayerSelected}!SnowMeltArcade.ProjectKitchen.Kitchen@{SnowMeltArcade.ProjectKitchen.Kitchen}}\index{SnowMeltArcade.ProjectKitchen.Kitchen@{SnowMeltArcade.ProjectKitchen.Kitchen}!PlayerSelected@{PlayerSelected}}}\mbox{\Hypertarget{namespace_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_af1de9533e7c32b9ea487ad99f364f0caa688aeaf82485b3781c0b3953f3c8c7b5}\label{namespace_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_af1de9533e7c32b9ea487ad99f364f0caa688aeaf82485b3781c0b3953f3c8c7b5}} 
+Player\+Selected&Controlled by a player \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AttachedToWorkstationItem@{AttachedToWorkstationItem}!SnowMeltArcade.ProjectKitchen.Kitchen@{SnowMeltArcade.ProjectKitchen.Kitchen}}\index{SnowMeltArcade.ProjectKitchen.Kitchen@{SnowMeltArcade.ProjectKitchen.Kitchen}!AttachedToWorkstationItem@{AttachedToWorkstationItem}}}\mbox{\Hypertarget{namespace_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_af1de9533e7c32b9ea487ad99f364f0caa9e21e1d259fb0a61254005c069c743a4}\label{namespace_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_af1de9533e7c32b9ea487ad99f364f0caa9e21e1d259fb0a61254005c069c743a4}} 
+Attached\+To\+Workstation\+Item&Attached to a workstation item \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PreparedOnWorkstationItem@{PreparedOnWorkstationItem}!SnowMeltArcade.ProjectKitchen.Kitchen@{SnowMeltArcade.ProjectKitchen.Kitchen}}\index{SnowMeltArcade.ProjectKitchen.Kitchen@{SnowMeltArcade.ProjectKitchen.Kitchen}!PreparedOnWorkstationItem@{PreparedOnWorkstationItem}}}\mbox{\Hypertarget{namespace_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_af1de9533e7c32b9ea487ad99f364f0caace2e5239d3c7f832dc72abb176060fd2}\label{namespace_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_af1de9533e7c32b9ea487ad99f364f0caace2e5239d3c7f832dc72abb176060fd2}} 
+Prepared\+On\+Workstation\+Item&Prepared on a workstation item, ready for the player to select \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 8 of file Food\+States.\+cs.
+

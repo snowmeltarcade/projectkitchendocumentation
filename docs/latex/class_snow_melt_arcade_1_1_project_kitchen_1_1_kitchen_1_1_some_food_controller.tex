@@ -14,15 +14,30 @@ Inheritance diagram for Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Kitchen.\+Some\+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_ad5bea61963d32a33edf083057633392d}{Configure}} ()
-\begin{DoxyCompactList}\small\item\em Configures this food \end{DoxyCompactList}\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_a8a3da8b5d600a1d6e274f7c12703228d}{Select}} ()
+\begin{DoxyCompactList}\small\item\em Configures this food as selected \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_ad60f528140a774ff4cab7e4fde2630b4}{Deselect}} ()
+\begin{DoxyCompactList}\small\item\em Configures this food as deselected \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_a974037f40cd9d7175ad799131624e6df}{Attach\+To\+Workstation\+Item}} ()
+\begin{DoxyCompactList}\small\item\em Configures this food to a state compatible with being attached to a workstation item \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_ad5dd8d2aa76f7dbbe8ac076a00139898}{Chop}} ()
+\begin{DoxyCompactList}\small\item\em Performs the chop action \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_ab2d809102cb23baf1431dfee2a65995e}{chops\+Needed}} = 5
+\begin{DoxyCompactList}\small\item\em The number of chops needed to be chopped... \end{DoxyCompactList}\item 
+Material \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_a86c2f96c2e60c60d42acaaa14ee11376}{chopped\+Material}}
+\begin{DoxyCompactList}\small\item\em The material to use to show this food is chopped \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
-Network\+Variable$<$ \mbox{\hyperlink{struct_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_spawned_object_id}{Spawned\+Object\+Id}} $>$ \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_ae1acf00c9141d874396b8f61ec56539f}{Id}} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\begin{DoxyCompactList}\small\item\em The id of this food \end{DoxyCompactList}\item 
 Game\+Object \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_afbcecb2df52aa61fbbbdd2f7486caae6}{Game\+Object}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\begin{DoxyCompactList}\small\item\em The game object for this food \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The game object of this food \end{DoxyCompactList}\item 
+Network\+Variable$<$ \mbox{\hyperlink{namespace_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_af1de9533e7c32b9ea487ad99f364f0ca}{Food\+States}} $>$ \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_a01dbc89532e9178096cff6b96e20b84f}{State}} = new(\mbox{\hyperlink{namespace_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_af1de9533e7c32b9ea487ad99f364f0caa7ddf961bfa9275c2054f28adccc8ab56}{Food\+States.\+Freeform}})\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The state of this food \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_a6a9557f12201d1b53c955a2eadf0f6b5}{Is\+Chopped}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Is this food chopped? \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -35,19 +50,108 @@ Definition at line 10 of file Some\+Food\+Controller.\+cs.
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_ad5bea61963d32a33edf083057633392d}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_ad5bea61963d32a33edf083057633392d}} 
-\index{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController@{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController}!Configure@{Configure}}
-\index{Configure@{Configure}!SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController@{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController}}
-\doxysubsubsection{\texorpdfstring{Configure()}{Configure()}}
-{\footnotesize\ttfamily void Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Kitchen.\+Some\+Food\+Controller.\+Configure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_a974037f40cd9d7175ad799131624e6df}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_a974037f40cd9d7175ad799131624e6df}} 
+\index{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController@{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController}!AttachToWorkstationItem@{AttachToWorkstationItem}}
+\index{AttachToWorkstationItem@{AttachToWorkstationItem}!SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController@{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController}}
+\doxysubsubsection{\texorpdfstring{AttachToWorkstationItem()}{AttachToWorkstationItem()}}
+{\footnotesize\ttfamily void Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Kitchen.\+Some\+Food\+Controller.\+Attach\+To\+Workstation\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-Configures this food 
+Configures this food to a state compatible with being attached to a workstation item 
 
 
 
-Definition at line 31 of file Some\+Food\+Controller.\+cs.
+Implements \mbox{\hyperlink{interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_i_food_a43bc04c234213fa1b2c77bf9d8ea3330}{Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Kitchen.\+IFood}}.
+
+
+
+Definition at line 97 of file Some\+Food\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_ad5dd8d2aa76f7dbbe8ac076a00139898}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_ad5dd8d2aa76f7dbbe8ac076a00139898}} 
+\index{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController@{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController}!Chop@{Chop}}
+\index{Chop@{Chop}!SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController@{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController}}
+\doxysubsubsection{\texorpdfstring{Chop()}{Chop()}}
+{\footnotesize\ttfamily void Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Kitchen.\+Some\+Food\+Controller.\+Chop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Performs the chop action 
+
+
+
+Implements \mbox{\hyperlink{interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_i_food_ab21ca80cc758ed164d77b11b9b94eca5}{Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Kitchen.\+IFood}}.
+
+
+
+Definition at line 123 of file Some\+Food\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_ad60f528140a774ff4cab7e4fde2630b4}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_ad60f528140a774ff4cab7e4fde2630b4}} 
+\index{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController@{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController}!Deselect@{Deselect}}
+\index{Deselect@{Deselect}!SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController@{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController}}
+\doxysubsubsection{\texorpdfstring{Deselect()}{Deselect()}}
+{\footnotesize\ttfamily void Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Kitchen.\+Some\+Food\+Controller.\+Deselect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Configures this food as deselected 
+
+
+
+Implements \mbox{\hyperlink{interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_i_food_a71431f480240af0b6708f4e91a961572}{Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Kitchen.\+IFood}}.
+
+
+
+Definition at line 72 of file Some\+Food\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_a8a3da8b5d600a1d6e274f7c12703228d}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_a8a3da8b5d600a1d6e274f7c12703228d}} 
+\index{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController@{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController}!Select@{Select}}
+\index{Select@{Select}!SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController@{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController}}
+\doxysubsubsection{\texorpdfstring{Select()}{Select()}}
+{\footnotesize\ttfamily void Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Kitchen.\+Some\+Food\+Controller.\+Select (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Configures this food as selected 
+
+
+
+Implements \mbox{\hyperlink{interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_i_food_a2b6fd31b23f78aba0dce42a58b40973a}{Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Kitchen.\+IFood}}.
+
+
+
+Definition at line 46 of file Some\+Food\+Controller.\+cs.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_a86c2f96c2e60c60d42acaaa14ee11376}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_a86c2f96c2e60c60d42acaaa14ee11376}} 
+\index{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController@{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController}!choppedMaterial@{choppedMaterial}}
+\index{choppedMaterial@{choppedMaterial}!SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController@{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController}}
+\doxysubsubsection{\texorpdfstring{choppedMaterial}{choppedMaterial}}
+{\footnotesize\ttfamily Material Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Kitchen.\+Some\+Food\+Controller.\+chopped\+Material}
+
+
+
+The material to use to show this food is chopped 
+
+
+
+Definition at line 37 of file Some\+Food\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_ab2d809102cb23baf1431dfee2a65995e}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_ab2d809102cb23baf1431dfee2a65995e}} 
+\index{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController@{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController}!chopsNeeded@{chopsNeeded}}
+\index{chopsNeeded@{chopsNeeded}!SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController@{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController}}
+\doxysubsubsection{\texorpdfstring{chopsNeeded}{chopsNeeded}}
+{\footnotesize\ttfamily uint Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Kitchen.\+Some\+Food\+Controller.\+chops\+Needed = 5}
+
+
+
+The number of chops needed to be chopped... 
+
+
+
+Definition at line 27 of file Some\+Food\+Controller.\+cs.
 
 
 
@@ -60,25 +164,39 @@ Definition at line 31 of file Some\+Food\+Controller.\+cs.
 
 
 
-The game object for this food 
-
-
-
-Definition at line 22 of file Some\+Food\+Controller.\+cs.
-
-\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_ae1acf00c9141d874396b8f61ec56539f}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_ae1acf00c9141d874396b8f61ec56539f}} 
-\index{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController@{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController}!Id@{Id}}
-\index{Id@{Id}!SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController@{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController}}
-\doxysubsubsection{\texorpdfstring{Id}{Id}}
-{\footnotesize\ttfamily Network\+Variable$<$\mbox{\hyperlink{struct_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_spawned_object_id}{Spawned\+Object\+Id}}$>$ Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Kitchen.\+Some\+Food\+Controller.\+Id = new()\hspace{0.3cm}{\ttfamily [get]}}
-
-
-
-The id of this food 
+The game object of this food 
 
 
 
 Definition at line 17 of file Some\+Food\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_a6a9557f12201d1b53c955a2eadf0f6b5}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_a6a9557f12201d1b53c955a2eadf0f6b5}} 
+\index{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController@{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController}!IsChopped@{IsChopped}}
+\index{IsChopped@{IsChopped}!SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController@{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController}}
+\doxysubsubsection{\texorpdfstring{IsChopped}{IsChopped}}
+{\footnotesize\ttfamily bool Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Kitchen.\+Some\+Food\+Controller.\+Is\+Chopped = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Is this food chopped? 
+
+
+
+Definition at line 32 of file Some\+Food\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_a01dbc89532e9178096cff6b96e20b84f}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_a01dbc89532e9178096cff6b96e20b84f}} 
+\index{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController@{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController}!State@{State}}
+\index{State@{State}!SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController@{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController}}
+\doxysubsubsection{\texorpdfstring{State}{State}}
+{\footnotesize\ttfamily Network\+Variable$<$\mbox{\hyperlink{namespace_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_af1de9533e7c32b9ea487ad99f364f0ca}{Food\+States}}$>$ Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Kitchen.\+Some\+Food\+Controller.\+State = new(\mbox{\hyperlink{namespace_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_af1de9533e7c32b9ea487ad99f364f0caa7ddf961bfa9275c2054f28adccc8ab56}{Food\+States.\+Freeform}})\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The state of this food 
+
+
+
+Definition at line 22 of file Some\+Food\+Controller.\+cs.
 
 
 

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['enabletouchcontrols_247',['EnableTouchControls',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_u_i_controller.html#a7ae4396b0abc820fb564e7dcf753a87b',1,'SnowMeltArcade::ProjectKitchen::Scenes::Kitchen::UIController']]],
-  ['equals_248',['Equals',['../struct_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_spawned_object_id.html#a067e9a5cdfc48b31f30942eedd393da4',1,'SnowMeltArcade.ProjectKitchen.Kitchen.SpawnedObjectId.Equals(SpawnedObjectId other)'],['../struct_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_spawned_object_id.html#a718566ec5f39b02557e7374d854d993f',1,'SnowMeltArcade.ProjectKitchen.Kitchen.SpawnedObjectId.Equals(object obj)']]]
+  ['deselect_298',['Deselect',['../interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_i_food.html#a71431f480240af0b6708f4e91a961572',1,'SnowMeltArcade.ProjectKitchen.Kitchen.IFood.Deselect()'],['../class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller.html#ad60f528140a774ff4cab7e4fde2630b4',1,'SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController.Deselect()']]]
 ];
