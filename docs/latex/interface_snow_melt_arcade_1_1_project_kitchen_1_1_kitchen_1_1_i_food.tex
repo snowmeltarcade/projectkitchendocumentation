@@ -21,7 +21,9 @@ void \mbox{\hyperlink{interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen
 void \mbox{\hyperlink{interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_i_food_a43bc04c234213fa1b2c77bf9d8ea3330}{Attach\+To\+Workstation\+Item}} ()
 \begin{DoxyCompactList}\small\item\em Configures this food to a state compatible with being attached to a workstation item \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_i_food_ab21ca80cc758ed164d77b11b9b94eca5}{Chop}} ()
-\begin{DoxyCompactList}\small\item\em Performs the chop action \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Performs the chop action \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_i_food_a6fdd3c50977576752d1cf3756a80bd0b}{Set\+World\+Position}} (Vector3 position)
+\begin{DoxyCompactList}\small\item\em Sets the world position of this food directly on the client, then sets it on the server \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
@@ -98,6 +100,25 @@ Configures this food as selected
 
 
 Implemented in \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_a8a3da8b5d600a1d6e274f7c12703228d}{Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Kitchen.\+Some\+Food\+Controller}}.
+
+\mbox{\Hypertarget{interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_i_food_a6fdd3c50977576752d1cf3756a80bd0b}\label{interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_i_food_a6fdd3c50977576752d1cf3756a80bd0b}} 
+\index{SnowMeltArcade.ProjectKitchen.Kitchen.IFood@{SnowMeltArcade.ProjectKitchen.Kitchen.IFood}!SetWorldPosition@{SetWorldPosition}}
+\index{SetWorldPosition@{SetWorldPosition}!SnowMeltArcade.ProjectKitchen.Kitchen.IFood@{SnowMeltArcade.ProjectKitchen.Kitchen.IFood}}
+\doxysubsubsection{\texorpdfstring{SetWorldPosition()}{SetWorldPosition()}}
+{\footnotesize\ttfamily void Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Kitchen.\+IFood.\+Set\+World\+Position (\begin{DoxyParamCaption}\item[{Vector3}]{position }\end{DoxyParamCaption})}
+
+
+
+Sets the world position of this food directly on the client, then sets it on the server 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The position to set\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_ae9f85f15d01fa3a3655288f7b6556f5e}{Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Kitchen.\+Some\+Food\+Controller}}.
 
 
 

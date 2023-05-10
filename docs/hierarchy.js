@@ -40,5 +40,8 @@ var hierarchy =
       [ "SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.KitchenController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html", null ],
       [ "SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectSpawnController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller.html", null ]
     ] ],
+    [ "NetworkTransform", null, [
+      [ "SnowMeltArcade.ProjectKitchen.Utils.ClientNetworkTransform", "class_snow_melt_arcade_1_1_project_kitchen_1_1_utils_1_1_client_network_transform.html", null ]
+    ] ],
     [ "SnowMeltArcade.ProjectKitchen.Kitchen.WorkstationGrid", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_grid.html", null ]
 ];

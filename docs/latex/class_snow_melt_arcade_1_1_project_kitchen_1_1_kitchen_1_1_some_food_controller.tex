@@ -21,7 +21,9 @@ void \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1
 void \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_a974037f40cd9d7175ad799131624e6df}{Attach\+To\+Workstation\+Item}} ()
 \begin{DoxyCompactList}\small\item\em Configures this food to a state compatible with being attached to a workstation item \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_ad5dd8d2aa76f7dbbe8ac076a00139898}{Chop}} ()
-\begin{DoxyCompactList}\small\item\em Performs the chop action \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Performs the chop action \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_ae9f85f15d01fa3a3655288f7b6556f5e}{Set\+World\+Position}} (Vector3 position)
+\begin{DoxyCompactList}\small\item\em Sets the world position of this food directly the server. If this is the host, the server rpc will be called instantly \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -45,7 +47,7 @@ Controls some kind of food
 
 
 
-Definition at line 10 of file Some\+Food\+Controller.\+cs.
+Definition at line 11 of file Some\+Food\+Controller.\+cs.
 
 
 
@@ -66,7 +68,7 @@ Implements \mbox{\hyperlink{interface_snow_melt_arcade_1_1_project_kitchen_1_1_k
 
 
 
-Definition at line 97 of file Some\+Food\+Controller.\+cs.
+Definition at line 98 of file Some\+Food\+Controller.\+cs.
 
 \mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_ad5dd8d2aa76f7dbbe8ac076a00139898}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_ad5dd8d2aa76f7dbbe8ac076a00139898}} 
 \index{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController@{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController}!Chop@{Chop}}
@@ -84,7 +86,7 @@ Implements \mbox{\hyperlink{interface_snow_melt_arcade_1_1_project_kitchen_1_1_k
 
 
 
-Definition at line 123 of file Some\+Food\+Controller.\+cs.
+Definition at line 124 of file Some\+Food\+Controller.\+cs.
 
 \mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_ad60f528140a774ff4cab7e4fde2630b4}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_ad60f528140a774ff4cab7e4fde2630b4}} 
 \index{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController@{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController}!Deselect@{Deselect}}
@@ -102,7 +104,7 @@ Implements \mbox{\hyperlink{interface_snow_melt_arcade_1_1_project_kitchen_1_1_k
 
 
 
-Definition at line 72 of file Some\+Food\+Controller.\+cs.
+Definition at line 73 of file Some\+Food\+Controller.\+cs.
 
 \mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_a8a3da8b5d600a1d6e274f7c12703228d}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_a8a3da8b5d600a1d6e274f7c12703228d}} 
 \index{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController@{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController}!Select@{Select}}
@@ -120,7 +122,30 @@ Implements \mbox{\hyperlink{interface_snow_melt_arcade_1_1_project_kitchen_1_1_k
 
 
 
-Definition at line 46 of file Some\+Food\+Controller.\+cs.
+Definition at line 47 of file Some\+Food\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_ae9f85f15d01fa3a3655288f7b6556f5e}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_ae9f85f15d01fa3a3655288f7b6556f5e}} 
+\index{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController@{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController}!SetWorldPosition@{SetWorldPosition}}
+\index{SetWorldPosition@{SetWorldPosition}!SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController@{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController}}
+\doxysubsubsection{\texorpdfstring{SetWorldPosition()}{SetWorldPosition()}}
+{\footnotesize\ttfamily void Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Kitchen.\+Some\+Food\+Controller.\+Set\+World\+Position (\begin{DoxyParamCaption}\item[{Vector3}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the world position of this food directly the server. If this is the host, the server rpc will be called instantly 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The position to set\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_i_food_a6fdd3c50977576752d1cf3756a80bd0b}{Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Kitchen.\+IFood}}.
+
+
+
+Definition at line 158 of file Some\+Food\+Controller.\+cs.
 
 
 
@@ -137,7 +162,7 @@ The material to use to show this food is chopped
 
 
 
-Definition at line 37 of file Some\+Food\+Controller.\+cs.
+Definition at line 38 of file Some\+Food\+Controller.\+cs.
 
 \mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_ab2d809102cb23baf1431dfee2a65995e}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_ab2d809102cb23baf1431dfee2a65995e}} 
 \index{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController@{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController}!chopsNeeded@{chopsNeeded}}
@@ -151,7 +176,7 @@ The number of chops needed to be chopped...
 
 
 
-Definition at line 27 of file Some\+Food\+Controller.\+cs.
+Definition at line 28 of file Some\+Food\+Controller.\+cs.
 
 
 
@@ -168,7 +193,7 @@ The game object of this food
 
 
 
-Definition at line 17 of file Some\+Food\+Controller.\+cs.
+Definition at line 18 of file Some\+Food\+Controller.\+cs.
 
 \mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_a6a9557f12201d1b53c955a2eadf0f6b5}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_a6a9557f12201d1b53c955a2eadf0f6b5}} 
 \index{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController@{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController}!IsChopped@{IsChopped}}
@@ -182,7 +207,7 @@ Is this food chopped?
 
 
 
-Definition at line 32 of file Some\+Food\+Controller.\+cs.
+Definition at line 33 of file Some\+Food\+Controller.\+cs.
 
 \mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_a01dbc89532e9178096cff6b96e20b84f}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_a01dbc89532e9178096cff6b96e20b84f}} 
 \index{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController@{SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController}!State@{State}}
@@ -196,7 +221,7 @@ The state of this food
 
 
 
-Definition at line 22 of file Some\+Food\+Controller.\+cs.
+Definition at line 23 of file Some\+Food\+Controller.\+cs.
 
 
 

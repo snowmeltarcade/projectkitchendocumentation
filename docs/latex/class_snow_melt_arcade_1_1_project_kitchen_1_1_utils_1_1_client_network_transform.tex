@@ -1,0 +1,49 @@
+\hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_utils_1_1_client_network_transform}{}\doxysection{Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Utils.\+Client\+Network\+Transform Class Reference}
+\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_utils_1_1_client_network_transform}\index{SnowMeltArcade.ProjectKitchen.Utils.ClientNetworkTransform@{SnowMeltArcade.ProjectKitchen.Utils.ClientNetworkTransform}}
+
+
+From\+: \href{https://docs-multiplayer.unity3d.com/netcode/current/components/networktransform/\#owner-authoritative-mode}{\texttt{ https\+://docs-\/multiplayer.\+unity3d.\+com/netcode/current/components/networktransform/\#owner-\/authoritative-\/mode}}  
+
+
+Inheritance diagram for Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Utils.\+Client\+Network\+Transform\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_snow_melt_arcade_1_1_project_kitchen_1_1_utils_1_1_client_network_transform}
+\end{center}
+\end{figure}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override bool \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_utils_1_1_client_network_transform_aa541f6eadb4d8ba010ea744ca5d62c82}{On\+Is\+Server\+Authoritative}} ()
+\begin{DoxyCompactList}\small\item\em Used to determine who can write to this transform. Owner client only. This imposes state to the server. This is putting trust on your clients. Make sure no security-\/sensitive features use this transform. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+From\+: \href{https://docs-multiplayer.unity3d.com/netcode/current/components/networktransform/\#owner-authoritative-mode}{\texttt{ https\+://docs-\/multiplayer.\+unity3d.\+com/netcode/current/components/networktransform/\#owner-\/authoritative-\/mode}} 
+
+Used for syncing a transform with client side changes. This includes host. Pure server as owner isn\textquotesingle{}t supported by this. Please use Network\+Transform for transforms that\textquotesingle{}ll always be owned by the server.
+
+Definition at line 13 of file Client\+Network\+Transform.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_utils_1_1_client_network_transform_aa541f6eadb4d8ba010ea744ca5d62c82}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_utils_1_1_client_network_transform_aa541f6eadb4d8ba010ea744ca5d62c82}} 
+\index{SnowMeltArcade.ProjectKitchen.Utils.ClientNetworkTransform@{SnowMeltArcade.ProjectKitchen.Utils.ClientNetworkTransform}!OnIsServerAuthoritative@{OnIsServerAuthoritative}}
+\index{OnIsServerAuthoritative@{OnIsServerAuthoritative}!SnowMeltArcade.ProjectKitchen.Utils.ClientNetworkTransform@{SnowMeltArcade.ProjectKitchen.Utils.ClientNetworkTransform}}
+\doxysubsubsection{\texorpdfstring{OnIsServerAuthoritative()}{OnIsServerAuthoritative()}}
+{\footnotesize\ttfamily override bool Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Utils.\+Client\+Network\+Transform.\+On\+Is\+Server\+Authoritative (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Used to determine who can write to this transform. Owner client only. This imposes state to the server. This is putting trust on your clients. Make sure no security-\/sensitive features use this transform. 
+
+
+
+Definition at line 19 of file Client\+Network\+Transform.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/runner/work/projectkitchen/projectkitchen/src/\+Project\+Kitchen/\+Assets/\+Scripts/\+Utils/\mbox{\hyperlink{_client_network_transform_8cs}{Client\+Network\+Transform.\+cs}}\end{DoxyCompactItemize}

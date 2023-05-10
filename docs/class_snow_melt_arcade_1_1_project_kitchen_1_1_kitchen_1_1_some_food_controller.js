@@ -4,6 +4,7 @@ var class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_control
     [ "Chop", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller.html#ad5dd8d2aa76f7dbbe8ac076a00139898", null ],
     [ "Deselect", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller.html#ad60f528140a774ff4cab7e4fde2630b4", null ],
     [ "Select", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller.html#a8a3da8b5d600a1d6e274f7c12703228d", null ],
+    [ "SetWorldPosition", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller.html#ae9f85f15d01fa3a3655288f7b6556f5e", null ],
     [ "choppedMaterial", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller.html#a86c2f96c2e60c60d42acaaa14ee11376", null ],
     [ "chopsNeeded", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller.html#ab2d809102cb23baf1431dfee2a65995e", null ],
     [ "GameObject", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller.html#afbcecb2df52aa61fbbbdd2f7486caae6", null ],
