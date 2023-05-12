@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['playerstates_394',['PlayerStates',['../namespace_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen.html#a12077e8a388c5ffa0bc7761d7ab13f5f',1,'SnowMeltArcade::ProjectKitchen::Scenes::Kitchen']]]
+  ['networkmodes_405',['NetworkModes',['../namespace_snow_melt_arcade_1_1_project_kitchen_1_1_networking.html#ad133d68ba1e931eae10a45196c8812b5',1,'SnowMeltArcade::ProjectKitchen::Networking']]]
 ];
