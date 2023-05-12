@@ -9,6 +9,9 @@ var dir_ba1c067579966ae1502eec60f823a510 =
     [ "UIController.cs", "_network_connect_2_u_i_controller_8cs.html", [
       [ "UIController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_controller" ]
     ] ],
+    [ "UIServerDetailsController.cs", "_u_i_server_details_controller_8cs.html", [
+      [ "UIServerDetailsController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_server_details_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_server_details_controller" ]
+    ] ],
     [ "UISigningInController.cs", "_u_i_signing_in_controller_8cs.html", [
       [ "UISigningInController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_signing_in_controller.html", null ]
     ] ]

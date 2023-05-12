@@ -24,25 +24,25 @@ void \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_
 \begin{DoxyCompactList}\small\item\em Shows the waiting for server screen \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller_a17c12897516079165d34bfda43d48248}{Set\+Server\+Connection\+Code}} (string code)
 \begin{DoxyCompactList}\small\item\em Sets the server connection code to display \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller_a89da54212e373ce0b2068d4012647aec}{Copy\+Server\+Connection\+Code\+To\+Clipboard}} ()
-\begin{DoxyCompactList}\small\item\em Copies the set server connection code to the system\textquotesingle{}s clipboard \end{DoxyCompactList}\item 
 string \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller_ad2cfc5becc56baffafb62ab07812ac40}{Get\+Player\+Entered\+Server\+Connection\+Code}} ()
-\begin{DoxyCompactList}\small\item\em Returns the server connection code the player entered \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Returns the server connection code the player entered \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller_abc48d2b25e628d937d81e973526c8c8d}{Get\+Player\+Entered\+Server\+IPAddress}} ()
+\begin{DoxyCompactList}\small\item\em Returns the server ip address the player entered \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 Game\+Object \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller_a89fa09006e00706ac080579bd5a9bdc9}{panel\+Configuration\+Buttons}}
 \begin{DoxyCompactList}\small\item\em The panel that displays the configuration buttons \end{DoxyCompactList}\item 
-Game\+Object \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller_aa41b995f3c45645294b1a9eb235db0b3}{panel\+Server\+Details}}
+\mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_server_details_controller}{UIServer\+Details\+Controller}} \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller_a32c66a12a87cbe541181fc4726a17a18}{panel\+Server\+Details}}
 \begin{DoxyCompactList}\small\item\em The panel that displays the start server details \end{DoxyCompactList}\item 
 Game\+Object \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller_aadc1fe72c7c0ee44995750cac12e1303}{panel\+Connect\+To\+Server\+Details}}
 \begin{DoxyCompactList}\small\item\em The panel that displays the connect to server details \end{DoxyCompactList}\item 
 Game\+Object \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller_a80fac25c5f7bb998768f1fd54c30bfe6}{panel\+Waiting\+For\+Server}}
 \begin{DoxyCompactList}\small\item\em The panel that displays the waiting for server message \end{DoxyCompactList}\item 
-TMP\+\_\+\+Text \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller_adf022f75d4ea32e52c34d0b8eeef116e}{text\+Server\+Connection\+Code}}
-\begin{DoxyCompactList}\small\item\em Displays the server connection code \end{DoxyCompactList}\item 
 TMP\+\_\+\+Input\+Field \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller_a17bd62a78534322e6f24fa9df7e1b317}{text\+Server\+Connection\+Code\+Input}}
-\begin{DoxyCompactList}\small\item\em The server connection code the player enters \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The server connection code the player enters \end{DoxyCompactList}\item 
+TMP\+\_\+\+Input\+Field \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller_ac91834c2eeef8926b79a9489025d6538}{text\+Server\+IPAddress\+Input}}
+\begin{DoxyCompactList}\small\item\em The server ip address the player enters \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -55,20 +55,6 @@ Definition at line 9 of file UIConfiguration\+Controller.\+cs.
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller_a89da54212e373ce0b2068d4012647aec}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller_a89da54212e373ce0b2068d4012647aec}} 
-\index{SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.UIConfigurationController@{SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.UIConfigurationController}!CopyServerConnectionCodeToClipboard@{CopyServerConnectionCodeToClipboard}}
-\index{CopyServerConnectionCodeToClipboard@{CopyServerConnectionCodeToClipboard}!SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.UIConfigurationController@{SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.UIConfigurationController}}
-\doxysubsubsection{\texorpdfstring{CopyServerConnectionCodeToClipboard()}{CopyServerConnectionCodeToClipboard()}}
-{\footnotesize\ttfamily void Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Scenes.\+Network\+Connect.\+UIConfiguration\+Controller.\+Copy\+Server\+Connection\+Code\+To\+Clipboard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-Copies the set server connection code to the system\textquotesingle{}s clipboard 
-
-
-
-Definition at line 88 of file UIConfiguration\+Controller.\+cs.
-
 \mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller_ad2cfc5becc56baffafb62ab07812ac40}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller_ad2cfc5becc56baffafb62ab07812ac40}} 
 \index{SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.UIConfigurationController@{SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.UIConfigurationController}!GetPlayerEnteredServerConnectionCode@{GetPlayerEnteredServerConnectionCode}}
 \index{GetPlayerEnteredServerConnectionCode@{GetPlayerEnteredServerConnectionCode}!SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.UIConfigurationController@{SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.UIConfigurationController}}
@@ -84,7 +70,24 @@ The server connection code
 \end{DoxyReturn}
 
 
-Definition at line 97 of file UIConfiguration\+Controller.\+cs.
+Definition at line 89 of file UIConfiguration\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller_abc48d2b25e628d937d81e973526c8c8d}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller_abc48d2b25e628d937d81e973526c8c8d}} 
+\index{SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.UIConfigurationController@{SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.UIConfigurationController}!GetPlayerEnteredServerIPAddress@{GetPlayerEnteredServerIPAddress}}
+\index{GetPlayerEnteredServerIPAddress@{GetPlayerEnteredServerIPAddress}!SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.UIConfigurationController@{SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.UIConfigurationController}}
+\doxysubsubsection{\texorpdfstring{GetPlayerEnteredServerIPAddress()}{GetPlayerEnteredServerIPAddress()}}
+{\footnotesize\ttfamily string Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Scenes.\+Network\+Connect.\+UIConfiguration\+Controller.\+Get\+Player\+Entered\+Server\+IPAddress (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the server ip address the player entered 
+
+\begin{DoxyReturn}{Returns}
+The server ip address
+\end{DoxyReturn}
+
+
+Definition at line 98 of file UIConfiguration\+Controller.\+cs.
 
 \mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller_a17c12897516079165d34bfda43d48248}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller_a17c12897516079165d34bfda43d48248}} 
 \index{SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.UIConfigurationController@{SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.UIConfigurationController}!SetServerConnectionCode@{SetServerConnectionCode}}
@@ -188,11 +191,11 @@ The panel that displays the connect to server details
 
 Definition at line 26 of file UIConfiguration\+Controller.\+cs.
 
-\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller_aa41b995f3c45645294b1a9eb235db0b3}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller_aa41b995f3c45645294b1a9eb235db0b3}} 
+\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller_a32c66a12a87cbe541181fc4726a17a18}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller_a32c66a12a87cbe541181fc4726a17a18}} 
 \index{SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.UIConfigurationController@{SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.UIConfigurationController}!panelServerDetails@{panelServerDetails}}
 \index{panelServerDetails@{panelServerDetails}!SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.UIConfigurationController@{SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.UIConfigurationController}}
 \doxysubsubsection{\texorpdfstring{panelServerDetails}{panelServerDetails}}
-{\footnotesize\ttfamily Game\+Object Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Scenes.\+Network\+Connect.\+UIConfiguration\+Controller.\+panel\+Server\+Details}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_server_details_controller}{UIServer\+Details\+Controller}} Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Scenes.\+Network\+Connect.\+UIConfiguration\+Controller.\+panel\+Server\+Details}
 
 
 
@@ -216,20 +219,6 @@ The panel that displays the waiting for server message
 
 Definition at line 31 of file UIConfiguration\+Controller.\+cs.
 
-\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller_adf022f75d4ea32e52c34d0b8eeef116e}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller_adf022f75d4ea32e52c34d0b8eeef116e}} 
-\index{SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.UIConfigurationController@{SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.UIConfigurationController}!textServerConnectionCode@{textServerConnectionCode}}
-\index{textServerConnectionCode@{textServerConnectionCode}!SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.UIConfigurationController@{SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.UIConfigurationController}}
-\doxysubsubsection{\texorpdfstring{textServerConnectionCode}{textServerConnectionCode}}
-{\footnotesize\ttfamily TMP\+\_\+\+Text Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Scenes.\+Network\+Connect.\+UIConfiguration\+Controller.\+text\+Server\+Connection\+Code}
-
-
-
-Displays the server connection code 
-
-
-
-Definition at line 36 of file UIConfiguration\+Controller.\+cs.
-
 \mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller_a17bd62a78534322e6f24fa9df7e1b317}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller_a17bd62a78534322e6f24fa9df7e1b317}} 
 \index{SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.UIConfigurationController@{SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.UIConfigurationController}!textServerConnectionCodeInput@{textServerConnectionCodeInput}}
 \index{textServerConnectionCodeInput@{textServerConnectionCodeInput}!SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.UIConfigurationController@{SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.UIConfigurationController}}
@@ -239,6 +228,20 @@ Definition at line 36 of file UIConfiguration\+Controller.\+cs.
 
 
 The server connection code the player enters 
+
+
+
+Definition at line 36 of file UIConfiguration\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller_ac91834c2eeef8926b79a9489025d6538}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller_ac91834c2eeef8926b79a9489025d6538}} 
+\index{SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.UIConfigurationController@{SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.UIConfigurationController}!textServerIPAddressInput@{textServerIPAddressInput}}
+\index{textServerIPAddressInput@{textServerIPAddressInput}!SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.UIConfigurationController@{SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.UIConfigurationController}}
+\doxysubsubsection{\texorpdfstring{textServerIPAddressInput}{textServerIPAddressInput}}
+{\footnotesize\ttfamily TMP\+\_\+\+Input\+Field Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Scenes.\+Network\+Connect.\+UIConfiguration\+Controller.\+text\+Server\+IPAddress\+Input}
+
+
+
+The server ip address the player enters 
 
 
 
