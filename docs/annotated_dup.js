@@ -25,9 +25,6 @@ var annotated_dup =
           [ "Dev", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev.html", [
             [ "BootstrapKitchen", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_bootstrap_kitchen.html", [
               [ "SceneController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_bootstrap_kitchen_1_1_scene_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_bootstrap_kitchen_1_1_scene_controller" ]
-            ] ],
-            [ "InGameConsoleTest", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_in_game_console_test.html", [
-              [ "SceneController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_in_game_console_test_1_1_scene_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_in_game_console_test_1_1_scene_controller" ]
             ] ]
           ] ],
           [ "Kitchen", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen.html", [

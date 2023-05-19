@@ -1,8 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller.html#a560c4a42577cbb93f1aa0bbf82977a93":[1,0,0,0,2,3,1,3],
-"class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller.html#a6aa1e10a2a43b260d46f9638e5bad465":[1,0,0,0,2,3,1,6],
-"class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller.html#a80fac25c5f7bb998768f1fd54c30bfe6":[1,0,0,0,2,3,1,10],
 "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller.html#a89fa09006e00706ac080579bd5a9bdc9":[1,0,0,0,2,3,1,7],
 "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller.html#aadc1fe72c7c0ee44995750cac12e1303":[1,0,0,0,2,3,1,8],
 "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller.html#abc48d2b25e628d937d81e973526c8c8d":[1,0,0,0,2,3,1,1],
@@ -125,7 +122,6 @@ var NAVTREEINDEX1 =
 "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_scenes.html":[0,0,0,0,3],
 "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev.html":[0,0,0,0,3,0],
 "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_bootstrap_kitchen.html":[0,0,0,0,3,0,0],
-"namespace_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_in_game_console_test.html":[0,0,0,0,3,0,1],
 "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen.html":[0,0,0,0,3,1],
 "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen.html#a12077e8a388c5ffa0bc7761d7ab13f5f":[0,0,0,0,3,1,6],
 "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen.html#a12077e8a388c5ffa0bc7761d7ab13f5fa0fb1cf75dc1d8aa819a6059a9cb49c7e":[0,0,0,0,3,1,6,2],

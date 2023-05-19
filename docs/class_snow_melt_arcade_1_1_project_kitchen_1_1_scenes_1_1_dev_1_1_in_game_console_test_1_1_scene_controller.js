@@ -1,5 +1,0 @@
-var class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_in_game_console_test_1_1_scene_controller =
-[
-    [ "Start", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_in_game_console_test_1_1_scene_controller.html#ac4ee35443d512c3a6a26ba77f8068850", null ],
-    [ "inGameConsoleController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_in_game_console_test_1_1_scene_controller.html#a6dc7c27340327c8852c6567ffd2838aa", null ]
-];
