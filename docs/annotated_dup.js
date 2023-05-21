@@ -28,8 +28,11 @@ var annotated_dup =
         ] ],
         [ "Scenes", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_scenes.html", [
           [ "Dev", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev.html", [
-            [ "BootstrapKitchen", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_bootstrap_kitchen.html", [
-              [ "SceneController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_bootstrap_kitchen_1_1_scene_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_bootstrap_kitchen_1_1_scene_controller" ]
+            [ "BootstrapKitchenAsClient", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_bootstrap_kitchen_as_client.html", [
+              [ "SceneController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_bootstrap_kitchen_as_client_1_1_scene_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_bootstrap_kitchen_as_client_1_1_scene_controller" ]
+            ] ],
+            [ "BootstrapKitchenAsServer", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_bootstrap_kitchen_as_server.html", [
+              [ "SceneController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_bootstrap_kitchen_as_server_1_1_scene_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_bootstrap_kitchen_as_server_1_1_scene_controller" ]
             ] ]
           ] ],
           [ "Kitchen", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen.html", [
