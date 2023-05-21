@@ -4,7 +4,6 @@ var class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player
     [ "AssignToWorkstation", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller.html#aa97b1964a56529a8769b2bfd3458e1fc", null ],
     [ "FoodIsAttachedToWorkstationItem", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller.html#a44277adcce04c9e3fc2585ffdc42a4fa", null ],
     [ "OnActivate", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller.html#a13d08e055cde48e7be4f04fab45fe659", null ],
-    [ "OnEnable", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller.html#a9b3285a46f9379d3572c3697ef9c4bc7", null ],
     [ "OnMousePosition", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller.html#ae6b099b40c249666de0d7524c81a32e5", null ],
     [ "OnSelectFood", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller.html#af40f45ce77958c8c03e0b628730be8a8", null ],
     [ "OnSelectWorkstation", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller.html#abd68c5273eb85f08823e3cd6006740a8", null ],

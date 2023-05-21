@@ -1,4 +1,0 @@
-var class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_bootstrap_kitchen_as_server_1_1_scene_controller =
-[
-    [ "Start", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_bootstrap_kitchen_as_server_1_1_scene_controller.html#a3a7580ed4fa7d1997394e022f0bfaa86", null ]
-];

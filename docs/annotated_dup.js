@@ -29,10 +29,10 @@ var annotated_dup =
         [ "Scenes", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_scenes.html", [
           [ "Dev", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev.html", [
             [ "BootstrapKitchenAsClient", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_bootstrap_kitchen_as_client.html", [
-              [ "SceneController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_bootstrap_kitchen_as_client_1_1_scene_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_bootstrap_kitchen_as_client_1_1_scene_controller" ]
+              [ "SceneController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_bootstrap_kitchen_as_client_1_1_scene_controller.html", null ]
             ] ],
             [ "BootstrapKitchenAsServer", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_bootstrap_kitchen_as_server.html", [
-              [ "SceneController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_bootstrap_kitchen_as_server_1_1_scene_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_bootstrap_kitchen_as_server_1_1_scene_controller" ]
+              [ "SceneController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_bootstrap_kitchen_as_server_1_1_scene_controller.html", null ]
             ] ]
           ] ],
           [ "Kitchen", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen.html", [
@@ -44,7 +44,7 @@ var annotated_dup =
             [ "UIController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_u_i_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_u_i_controller" ]
           ] ],
           [ "Loading", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_loading.html", [
-            [ "LoadingController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_loading_1_1_loading_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_loading_1_1_loading_controller" ]
+            [ "LoadingController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_loading_1_1_loading_controller.html", null ]
           ] ],
           [ "NetworkConnect", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect.html", [
             [ "SceneController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_scene_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_scene_controller" ],
@@ -54,7 +54,7 @@ var annotated_dup =
             [ "UISigningInController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_signing_in_controller.html", null ]
           ] ],
           [ "Startup", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_startup.html", [
-            [ "StartupController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_startup_1_1_startup_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_startup_1_1_startup_controller" ]
+            [ "StartupController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_startup_1_1_startup_controller.html", null ]
           ] ]
         ] ],
         [ "Utils", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_utils.html", [

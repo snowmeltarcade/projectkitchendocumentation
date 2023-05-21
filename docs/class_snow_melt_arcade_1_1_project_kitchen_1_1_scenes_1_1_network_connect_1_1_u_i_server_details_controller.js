@@ -5,7 +5,6 @@ var class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_
     [ "SetServerConnectionCode", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_server_details_controller.html#a4d3e4c863c9827e969c43a01eeb769e3", null ],
     [ "ShowConnectionCodeServerDetailsScreen", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_server_details_controller.html#acc5290dcb855425acb3b52b42e19abed", null ],
     [ "ShowLanServerDetailsScreen", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_server_details_controller.html#abdb43be85a7f4669e0c77f3ef18693d6", null ],
-    [ "Start", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_server_details_controller.html#a217885bb315c659f5271ce2ab572de0d", null ],
     [ "buttonShowConnectionCodeServerDetails", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_server_details_controller.html#a77e9b6a72c7b6977e8c35aefe258af43", null ],
     [ "buttonShowLanServerDetails", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_server_details_controller.html#a9ce1764d9023756761226062d0a7d818", null ],
     [ "panelConnectionCodeServerDetails", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_server_details_controller.html#a2fd5864e55095a6ea2a9b5b7c5451b4a", null ],

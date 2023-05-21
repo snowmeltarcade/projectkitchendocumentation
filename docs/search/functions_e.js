@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['update_416',['Update',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_utils_1_1_timed_value_lerp_float.html#a9f52bfb7f131b3dd838c39339d610ce7',1,'SnowMeltArcade.ProjectKitchen.Utils.TimedValueLerpFloat.Update()'],['../class_snow_melt_arcade_1_1_project_kitchen_1_1_utils_1_1_timed_value_lerp_vector3.html#aa6ae4ab25f7182913d6fd897146c4655',1,'SnowMeltArcade.ProjectKitchen.Utils.TimedValueLerpVector3.Update()']]]
+  ['workstationclientdata_405',['WorkstationClientData',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_client_data.html#aae530062f5b74305711c00270dc2bb24',1,'SnowMeltArcade.ProjectKitchen.Kitchen.WorkstationClientData.WorkstationClientData()'],['../class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_client_data.html#aa72594e4b19bb1ca5c6407318b6b9e56',1,'SnowMeltArcade.ProjectKitchen.Kitchen.WorkstationClientData.WorkstationClientData(SpawnedObjectId id, Vector3 position)']]],
+  ['workstationgrid_406',['WorkstationGrid',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_grid.html#affc0ec80acfec00bf66964060dbff7b6',1,'SnowMeltArcade::ProjectKitchen::Kitchen::WorkstationGrid']]]
 ];
