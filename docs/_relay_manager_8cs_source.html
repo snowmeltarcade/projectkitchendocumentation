@@ -114,7 +114,7 @@ $(document).ready(function(){initNavTree('_relay_manager_8cs_source.html',''); i
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                var networkTransport = <a class="code" href="_relay_manager_8cs.html#aef19bab18b9814edeef255c43e4f6bbc">Object</a>.FindObjectOfType&lt;UnityTransport&gt;();</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                <span class="keywordflow">if</span> (networkTransport is <span class="keyword">null</span>)</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                    Debug.LogError(<span class="stringliteral">&quot;Failed to find unity transport.&quot;</span>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                    <a class="code" href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.LogError(<span class="stringliteral">&quot;Failed to find unity transport.&quot;</span>);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                }</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                <span class="keywordflow">return</span> networkTransport;</div>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('_relay_manager_8cs_source.html',''); i
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            var dtlsEndpoint = RelayManager.AllocationInformation.ServerEndpoints.First(</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                e =&gt; e.ConnectionType == <span class="stringliteral">&quot;dtls&quot;</span>);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            Debug.Log($<span class="stringliteral">&quot;Trying to configure: {dtlsEndpoint.Host}&quot;</span>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <a class="code" href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log($<span class="stringliteral">&quot;Trying to configure: {dtlsEndpoint.Host}&quot;</span>);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            RelayManager.NetworkTransport.SetHostRelayData(</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                dtlsEndpoint.Host,</div>
@@ -151,7 +151,7 @@ $(document).ready(function(){initNavTree('_relay_manager_8cs_source.html',''); i
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            var dtlsEndpoint = RelayManager.JoinAllocationInformation.ServerEndpoints.First(</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                e =&gt; e.ConnectionType == <span class="stringliteral">&quot;dtls&quot;</span>);</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            Debug.Log($<span class="stringliteral">&quot;Trying to join: {dtlsEndpoint.Host}&quot;</span>);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <a class="code" href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log($<span class="stringliteral">&quot;Trying to join: {dtlsEndpoint.Host}&quot;</span>);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            RelayManager.NetworkTransport.SetRelayServerData(</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                dtlsEndpoint.Host,</div>
@@ -179,7 +179,7 @@ $(document).ready(function(){initNavTree('_relay_manager_8cs_source.html',''); i
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            }</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            var code = await RelayService.Instance.GetJoinCodeAsync(RelayManager.AllocationInformation.AllocationId);</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            Debug.Log($<span class="stringliteral">&quot;Relay allocation code: {code}&quot;</span>);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            <a class="code" href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log($<span class="stringliteral">&quot;Relay allocation code: {code}&quot;</span>);</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <span class="keywordflow">return</span> code;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        }</div>
@@ -187,11 +187,12 @@ $(document).ready(function(){initNavTree('_relay_manager_8cs_source.html',''); i
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">        #endregion</span></div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    }</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
+<div class="ttc" id="a_game_runner_8cs_html_a0100be52d45f14348918ea69ec09f959"><div class="ttname"><a href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a></div><div class="ttdeci">UnityEngine.Debug Debug</div><div class="ttdef"><b>Definition:</b> <a href="_game_runner_8cs_source.html#l00008">GameRunner.cs:8</a></div></div>
 <div class="ttc" id="a_relay_manager_8cs_html_aef19bab18b9814edeef255c43e4f6bbc"><div class="ttname"><a href="_relay_manager_8cs.html#aef19bab18b9814edeef255c43e4f6bbc">Object</a></div><div class="ttdeci">UnityEngine.Object Object</div><div class="ttdef"><b>Definition:</b> <a href="_relay_manager_8cs_source.html#l00011">RelayManager.cs:11</a></div></div>
 <div class="ttc" id="anamespace_snow_melt_arcade_1_1_project_kitchen_1_1_networking_html"><div class="ttname"><a href="namespace_snow_melt_arcade_1_1_project_kitchen_1_1_networking.html">SnowMeltArcade.ProjectKitchen.Networking</a></div><div class="ttdef"><b>Definition:</b> <a href="_client_manager_8cs_source.html#l00007">ClientManager.cs:8</a></div></div>
 <div class="ttc" id="anamespace_snow_melt_arcade_1_1_project_kitchen_1_1_unity_services_html"><div class="ttname"><a href="namespace_snow_melt_arcade_1_1_project_kitchen_1_1_unity_services.html">SnowMeltArcade.ProjectKitchen.UnityServices</a></div><div class="ttdef"><b>Definition:</b> <a href="_authentication_manager_8cs_source.html#l00006">AuthenticationManager.cs:7</a></div></div>
-<div class="ttc" id="anamespace_snow_melt_arcade_1_1_project_kitchen_html"><div class="ttname"><a href="namespace_snow_melt_arcade_1_1_project_kitchen.html">SnowMeltArcade.ProjectKitchen</a></div><div class="ttdef"><b>Definition:</b> <a href="_client_state_8cs_source.html#l00003">ClientState.cs:4</a></div></div>
-<div class="ttc" id="anamespace_snow_melt_arcade_html"><div class="ttname"><a href="namespace_snow_melt_arcade.html">SnowMeltArcade</a></div><div class="ttdef"><b>Definition:</b> <a href="_client_state_8cs_source.html#l00003">ClientState.cs:4</a></div></div>
+<div class="ttc" id="anamespace_snow_melt_arcade_1_1_project_kitchen_html"><div class="ttname"><a href="namespace_snow_melt_arcade_1_1_project_kitchen.html">SnowMeltArcade.ProjectKitchen</a></div><div class="ttdef"><b>Definition:</b> <a href="_command_line_arguments_8cs_source.html#l00005">CommandLineArguments.cs:6</a></div></div>
+<div class="ttc" id="anamespace_snow_melt_arcade_html"><div class="ttname"><a href="namespace_snow_melt_arcade.html">SnowMeltArcade</a></div><div class="ttdef"><b>Definition:</b> <a href="_command_line_arguments_8cs_source.html#l00005">CommandLineArguments.cs:6</a></div></div>
 <div class="ttc" id="anamespace_system_html"><div class="ttname"><a href="namespace_system.html">System</a></div><div class="ttdef"><b>Definition:</b> <a href="_enable_records_8cs_source.html#l00005">EnableRecords.cs:6</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['objectspawncontroller_2ecs_291',['ObjectSpawnController.cs',['../_object_spawn_controller_8cs.html',1,'']]]
+  ['lanmanager_2ecs_318',['LanManager.cs',['../_lan_manager_8cs.html',1,'']]],
+  ['loadingcontroller_2ecs_319',['LoadingController.cs',['../_loading_controller_8cs.html',1,'']]]
 ];

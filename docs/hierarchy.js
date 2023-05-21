@@ -1,6 +1,7 @@
 var hierarchy =
 [
     [ "SnowMeltArcade.ProjectKitchen.Kitchen.ClientState", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_client_state.html", null ],
+    [ "SnowMeltArcade.ProjectKitchen.Editor.Utils.GameRunner", "class_snow_melt_arcade_1_1_project_kitchen_1_1_editor_1_1_utils_1_1_game_runner.html", null ],
     [ "SnowMeltArcade.ProjectKitchen.Kitchen.IFood", "interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_i_food.html", [
       [ "SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller.html", null ]
     ] ],

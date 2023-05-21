@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['width_457',['Width',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_grid.html#af49bd3daa53090b8bb0301e776bda854',1,'SnowMeltArcade::ProjectKitchen::Kitchen::WorkstationGrid']]],
-  ['workstations_458',['Workstations',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller.html#a57fc5a79063cbb30326ef78e928eebe8',1,'SnowMeltArcade::ProjectKitchen::Scenes::Kitchen::ObjectSpawnController']]]
+  ['selectedworkstationsections_500',['SelectedWorkstationSections',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_client_state.html#aed7d156cff3c14b9b32d029a0d10cc1f',1,'SnowMeltArcade::ProjectKitchen::Kitchen::ClientState']]],
+  ['state_501',['State',['../interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_i_food.html#affe46ba31a0c882315fb078d7126eac1',1,'SnowMeltArcade.ProjectKitchen.Kitchen.IFood.State()'],['../class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller.html#a01dbc89532e9178096cff6b96e20b84f',1,'SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController.State()']]]
 ];

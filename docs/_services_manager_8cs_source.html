@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('_services_manager_8cs_source.html','')
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">void</span> InitializeBeforeSceneLoad()</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            Debug.Log(<span class="stringliteral">&quot;Preparing to initialize Unity3D services...&quot;</span>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <a class="code" href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log(<span class="stringliteral">&quot;Preparing to initialize Unity3D services...&quot;</span>);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="comment">// Unity3D APIs must be run on the main Unity3D thread, so we&#39;ll call `RunSynchronously()`.</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="comment">// As the calls may finish very fast, we&#39;ll trap and ignore the &#39;task is already completed&#39;</span></div>
@@ -136,13 +136,13 @@ $(document).ready(function(){initNavTree('_services_manager_8cs_source.html','')
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keyword">private</span> <span class="keyword">static</span> async Task Initialize()</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            Debug.Log(<span class="stringliteral">&quot;Initializing Unity3D services...&quot;</span>);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <a class="code" href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log(<span class="stringliteral">&quot;Initializing Unity3D services...&quot;</span>);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            </div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordflow">try</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            {</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                <span class="keywordflow">if</span> (ServicesManager.Ready)</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                    Debug.Log(<span class="stringliteral">&quot;Unity3D services are already initialized.&quot;</span>);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                    <a class="code" href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log(<span class="stringliteral">&quot;Unity3D services are already initialized.&quot;</span>);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                    <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                }</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
@@ -153,23 +153,24 @@ $(document).ready(function(){initNavTree('_services_manager_8cs_source.html','')
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                <span class="keywordflow">while</span> (!ServicesManager.Ready)</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                    Debug.Log($<span class="stringliteral">&quot;Waiting for Unity3D services to initialize. Current state: {Unity.Services.Core.UnityServices.State}&quot;</span>);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                    <a class="code" href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log($<span class="stringliteral">&quot;Waiting for Unity3D services to initialize. Current state: {Unity.Services.Core.UnityServices.State}&quot;</span>);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                    await Task.Delay(TimeSpan.FromMilliseconds(500));</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                }</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            }</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keywordflow">catch</span> (Exception ex)</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            {</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                Debug.LogError(<span class="stringliteral">&quot;Failed to initialize Unity3D services.&quot;</span>);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                Debug.LogException(ex);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                <a class="code" href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.LogError(<span class="stringliteral">&quot;Failed to initialize Unity3D services.&quot;</span>);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                <a class="code" href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.LogException(ex);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            }</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            Debug.Log(<span class="stringliteral">&quot;Unity3D services have been initialized.&quot;</span>);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <a class="code" href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log(<span class="stringliteral">&quot;Unity3D services have been initialized.&quot;</span>);</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        }</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        </div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">        #endregion</span></div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    }</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
+<div class="ttc" id="a_game_runner_8cs_html_a0100be52d45f14348918ea69ec09f959"><div class="ttname"><a href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a></div><div class="ttdeci">UnityEngine.Debug Debug</div><div class="ttdef"><b>Definition:</b> <a href="_game_runner_8cs_source.html#l00008">GameRunner.cs:8</a></div></div>
 <div class="ttc" id="anamespace_snow_melt_arcade_1_1_project_kitchen_1_1_unity_services_html"><div class="ttname"><a href="namespace_snow_melt_arcade_1_1_project_kitchen_1_1_unity_services.html">SnowMeltArcade.ProjectKitchen.UnityServices</a></div><div class="ttdef"><b>Definition:</b> <a href="_authentication_manager_8cs_source.html#l00006">AuthenticationManager.cs:7</a></div></div>
 <div class="ttc" id="anamespace_system_html"><div class="ttname"><a href="namespace_system.html">System</a></div><div class="ttdef"><b>Definition:</b> <a href="_enable_records_8cs_source.html#l00005">EnableRecords.cs:6</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

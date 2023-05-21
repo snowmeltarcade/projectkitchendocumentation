@@ -2,6 +2,11 @@ var annotated_dup =
 [
     [ "SnowMeltArcade", "namespace_snow_melt_arcade.html", [
       [ "ProjectKitchen", "namespace_snow_melt_arcade_1_1_project_kitchen.html", [
+        [ "Editor", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_editor.html", [
+          [ "Utils", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_editor_1_1_utils.html", [
+            [ "GameRunner", "class_snow_melt_arcade_1_1_project_kitchen_1_1_editor_1_1_utils_1_1_game_runner.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_editor_1_1_utils_1_1_game_runner" ]
+          ] ]
+        ] ],
         [ "Kitchen", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen.html", [
           [ "WorkstationItems", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_items.html", [
             [ "ChoppingBoardController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_items_1_1_chopping_board_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_items_1_1_chopping_board_controller" ],

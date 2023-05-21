@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('_in_game_console_controller_8cs_source
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">public</span> TMP_Text textText;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">private</span> List&lt;string&gt; Lines { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keyword">new</span>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">private</span> List&lt;string&gt; Lines { <span class="keyword">get</span>; } = <span class="keyword">new</span>();</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keyword">private</span> uint MaxLines =&gt; 16;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        </div>
@@ -111,12 +111,12 @@ $(document).ready(function(){initNavTree('_in_game_console_controller_8cs_source
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> Start()</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            Application.logMessageReceived += this.LogMessageReceived;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            UnityEngine.Application.logMessageReceived += this.LogMessageReceived;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        }</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> OnDestroy()</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            Application.logMessageReceived -= this.LogMessageReceived;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            UnityEngine.Application.logMessageReceived -= this.LogMessageReceived;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> AddLine(<span class="keywordtype">string</span> line)</div>
