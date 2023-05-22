@@ -20,21 +20,11 @@ void \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_
 \begin{DoxyCompactList}\small\item\em Moves this camera to the position of the looked at workstation \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_camera_controller_a36ef98f20f6d0964ec870740da54f77f}{Move\+To\+Select\+Workstation}} ()
 \begin{DoxyCompactList}\small\item\em Moves this camera to the position for the player to select a workstation \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Public Attributes}
+\doxysubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
-Camera \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_camera_controller_a52d3b0fe6d49330f32087c792daec1cd}{player\+Camera}}
-\begin{DoxyCompactList}\small\item\em The associated camera \end{DoxyCompactList}\item 
-Vector3 \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_camera_controller_a78fe3edefc5412e2ad841c59d6b021e2}{workstation\+Camera\+Offset}}
-\begin{DoxyCompactList}\small\item\em The offset of the camera when looking at a workstation \end{DoxyCompactList}\item 
-float \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_camera_controller_a3c8902483d9098135fcb912572c2b88a}{select\+Workstation\+Size}}
-\begin{DoxyCompactList}\small\item\em The orthographic size this camera should be when selecting a workstation \end{DoxyCompactList}\item 
-float \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_camera_controller_aa207e0048d41ddb7a65c234296c76640}{look\+At\+Workstation\+Size}}
-\begin{DoxyCompactList}\small\item\em The orthographic size this camera should be when looking at a workstation \end{DoxyCompactList}\item 
-Vector3 \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_camera_controller_a6966431121ea10846d437bb895d9d68f}{select\+Workstation\+Position}}
-\begin{DoxyCompactList}\small\item\em The position this camera should be in when select a workstation. Note\+: The y position is ignored because this camera is orthographic. The height of the camera is simulated using the {\ttfamily select\+Workstation\+Size} field. \end{DoxyCompactList}\item 
-float \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_camera_controller_a9af4dbacb86f9825e171738000dccbd0}{select\+Workstation\+Lerp\+Time\+In\+Seconds}}
-\begin{DoxyCompactList}\small\item\em The amount of time it takes for the camera to lerp to the select workstation position \end{DoxyCompactList}\end{DoxyCompactItemize}
+Camera \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_camera_controller_aee396a5c4f58c495e6728e58a2f44168}{Player\+Camera}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns the associated camera \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -66,7 +56,7 @@ Sets the camera to look at the passed workstation position
 \end{DoxyParams}
 
 
-Definition at line 62 of file Camera\+Controller.\+cs.
+Definition at line 73 of file Camera\+Controller.\+cs.
 
 \mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_camera_controller_a36ef98f20f6d0964ec870740da54f77f}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_camera_controller_a36ef98f20f6d0964ec870740da54f77f}} 
 \index{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.CameraController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.CameraController}!MoveToSelectWorkstation@{MoveToSelectWorkstation}}
@@ -80,7 +70,7 @@ Moves this camera to the position for the player to select a workstation
 
 
 
-Definition at line 92 of file Camera\+Controller.\+cs.
+Definition at line 103 of file Camera\+Controller.\+cs.
 
 \mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_camera_controller_a3ad302becf3bf4347f545c6168db2cee}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_camera_controller_a3ad302becf3bf4347f545c6168db2cee}} 
 \index{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.CameraController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.CameraController}!MoveToWorkstation@{MoveToWorkstation}}
@@ -94,94 +84,24 @@ Moves this camera to the position of the looked at workstation
 
 
 
-Definition at line 81 of file Camera\+Controller.\+cs.
+Definition at line 92 of file Camera\+Controller.\+cs.
 
 
 
-\doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_camera_controller_aa207e0048d41ddb7a65c234296c76640}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_camera_controller_aa207e0048d41ddb7a65c234296c76640}} 
-\index{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.CameraController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.CameraController}!lookAtWorkstationSize@{lookAtWorkstationSize}}
-\index{lookAtWorkstationSize@{lookAtWorkstationSize}!SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.CameraController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.CameraController}}
-\doxysubsubsection{\texorpdfstring{lookAtWorkstationSize}{lookAtWorkstationSize}}
-{\footnotesize\ttfamily float Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Scenes.\+Kitchen.\+Camera\+Controller.\+look\+At\+Workstation\+Size}
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_camera_controller_aee396a5c4f58c495e6728e58a2f44168}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_camera_controller_aee396a5c4f58c495e6728e58a2f44168}} 
+\index{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.CameraController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.CameraController}!PlayerCamera@{PlayerCamera}}
+\index{PlayerCamera@{PlayerCamera}!SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.CameraController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.CameraController}}
+\doxysubsubsection{\texorpdfstring{PlayerCamera}{PlayerCamera}}
+{\footnotesize\ttfamily Camera Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Scenes.\+Kitchen.\+Camera\+Controller.\+Player\+Camera\hspace{0.3cm}{\ttfamily [get]}}
 
 
 
-The orthographic size this camera should be when looking at a workstation 
+Returns the associated camera 
 
 
 
-Definition at line 33 of file Camera\+Controller.\+cs.
-
-\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_camera_controller_a52d3b0fe6d49330f32087c792daec1cd}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_camera_controller_a52d3b0fe6d49330f32087c792daec1cd}} 
-\index{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.CameraController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.CameraController}!playerCamera@{playerCamera}}
-\index{playerCamera@{playerCamera}!SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.CameraController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.CameraController}}
-\doxysubsubsection{\texorpdfstring{playerCamera}{playerCamera}}
-{\footnotesize\ttfamily Camera Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Scenes.\+Kitchen.\+Camera\+Controller.\+player\+Camera}
-
-
-
-The associated camera 
-
-
-
-Definition at line 18 of file Camera\+Controller.\+cs.
-
-\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_camera_controller_a9af4dbacb86f9825e171738000dccbd0}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_camera_controller_a9af4dbacb86f9825e171738000dccbd0}} 
-\index{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.CameraController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.CameraController}!selectWorkstationLerpTimeInSeconds@{selectWorkstationLerpTimeInSeconds}}
-\index{selectWorkstationLerpTimeInSeconds@{selectWorkstationLerpTimeInSeconds}!SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.CameraController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.CameraController}}
-\doxysubsubsection{\texorpdfstring{selectWorkstationLerpTimeInSeconds}{selectWorkstationLerpTimeInSeconds}}
-{\footnotesize\ttfamily float Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Scenes.\+Kitchen.\+Camera\+Controller.\+select\+Workstation\+Lerp\+Time\+In\+Seconds}
-
-
-
-The amount of time it takes for the camera to lerp to the select workstation position 
-
-
-
-Definition at line 46 of file Camera\+Controller.\+cs.
-
-\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_camera_controller_a6966431121ea10846d437bb895d9d68f}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_camera_controller_a6966431121ea10846d437bb895d9d68f}} 
-\index{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.CameraController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.CameraController}!selectWorkstationPosition@{selectWorkstationPosition}}
-\index{selectWorkstationPosition@{selectWorkstationPosition}!SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.CameraController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.CameraController}}
-\doxysubsubsection{\texorpdfstring{selectWorkstationPosition}{selectWorkstationPosition}}
-{\footnotesize\ttfamily Vector3 Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Scenes.\+Kitchen.\+Camera\+Controller.\+select\+Workstation\+Position}
-
-
-
-The position this camera should be in when select a workstation. Note\+: The y position is ignored because this camera is orthographic. The height of the camera is simulated using the {\ttfamily select\+Workstation\+Size} field. 
-
-
-
-Definition at line 40 of file Camera\+Controller.\+cs.
-
-\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_camera_controller_a3c8902483d9098135fcb912572c2b88a}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_camera_controller_a3c8902483d9098135fcb912572c2b88a}} 
-\index{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.CameraController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.CameraController}!selectWorkstationSize@{selectWorkstationSize}}
-\index{selectWorkstationSize@{selectWorkstationSize}!SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.CameraController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.CameraController}}
-\doxysubsubsection{\texorpdfstring{selectWorkstationSize}{selectWorkstationSize}}
-{\footnotesize\ttfamily float Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Scenes.\+Kitchen.\+Camera\+Controller.\+select\+Workstation\+Size}
-
-
-
-The orthographic size this camera should be when selecting a workstation 
-
-
-
-Definition at line 28 of file Camera\+Controller.\+cs.
-
-\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_camera_controller_a78fe3edefc5412e2ad841c59d6b021e2}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_camera_controller_a78fe3edefc5412e2ad841c59d6b021e2}} 
-\index{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.CameraController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.CameraController}!workstationCameraOffset@{workstationCameraOffset}}
-\index{workstationCameraOffset@{workstationCameraOffset}!SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.CameraController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.CameraController}}
-\doxysubsubsection{\texorpdfstring{workstationCameraOffset}{workstationCameraOffset}}
-{\footnotesize\ttfamily Vector3 Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Scenes.\+Kitchen.\+Camera\+Controller.\+workstation\+Camera\+Offset}
-
-
-
-The offset of the camera when looking at a workstation 
-
-
-
-Definition at line 23 of file Camera\+Controller.\+cs.
+Definition at line 24 of file Camera\+Controller.\+cs.
 
 
 
