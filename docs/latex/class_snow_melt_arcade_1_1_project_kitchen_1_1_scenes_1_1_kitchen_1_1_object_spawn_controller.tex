@@ -20,8 +20,12 @@ void \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_
 \begin{DoxyCompactList}\small\item\em Spawns a workstation item as the passed transform \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller_a2a5bd7b2bea20980954c4022098485ea}{Spawn\+Food}} (Transform spawn\+Transform)
 \begin{DoxyCompactList}\small\item\em Spawns food at the passed transform \end{DoxyCompactList}\item 
-\mbox{\hyperlink{interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_i_workstation}{IWorkstation}} \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller_acf6d6df373dcecfa7209c5f88e6f5389}{Find\+Workstation\+With\+Id}} (\mbox{\hyperlink{struct_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_spawned_object_id}{Spawned\+Object\+Id}} id)
-\begin{DoxyCompactList}\small\item\em Finds the workstation with the passed id \end{DoxyCompactList}\end{DoxyCompactItemize}
+\mbox{\hyperlink{interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_i_workstation}{IWorkstation}} \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller_a4cf4892b29790db5a08a1e28a2e32e3a}{Find\+Workstation\+By\+Id}} (\mbox{\hyperlink{struct_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_spawned_object_id}{Spawned\+Object\+Id}} workstation\+Id)
+\begin{DoxyCompactList}\small\item\em Finds the workstation with the passed id \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_i_workstation}{IWorkstation}} \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller_aeb429da35005a63417e5c84d7aed9853}{Find\+Workstation\+By\+Client\+Id}} (ulong client\+Id)
+\begin{DoxyCompactList}\small\item\em Finds the workstation with the passed client id \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_i_workstation}{IWorkstation}} \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller_aa519530b61ad19e9aa2ed031c45af35c}{Find\+Workstation\+With\+No\+Assigned\+Client}} ()
+\begin{DoxyCompactList}\small\item\em Finds a workstation with no assigned client \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
@@ -39,19 +43,19 @@ Definition at line 15 of file Object\+Spawn\+Controller.\+cs.
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller_acf6d6df373dcecfa7209c5f88e6f5389}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller_acf6d6df373dcecfa7209c5f88e6f5389}} 
-\index{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectSpawnController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectSpawnController}!FindWorkstationWithId@{FindWorkstationWithId}}
-\index{FindWorkstationWithId@{FindWorkstationWithId}!SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectSpawnController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectSpawnController}}
-\doxysubsubsection{\texorpdfstring{FindWorkstationWithId()}{FindWorkstationWithId()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_i_workstation}{IWorkstation}} Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Scenes.\+Kitchen.\+Object\+Spawn\+Controller.\+Find\+Workstation\+With\+Id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_spawned_object_id}{Spawned\+Object\+Id}}}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller_aeb429da35005a63417e5c84d7aed9853}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller_aeb429da35005a63417e5c84d7aed9853}} 
+\index{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectSpawnController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectSpawnController}!FindWorkstationByClientId@{FindWorkstationByClientId}}
+\index{FindWorkstationByClientId@{FindWorkstationByClientId}!SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectSpawnController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectSpawnController}}
+\doxysubsubsection{\texorpdfstring{FindWorkstationByClientId()}{FindWorkstationByClientId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_i_workstation}{IWorkstation}} Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Scenes.\+Kitchen.\+Object\+Spawn\+Controller.\+Find\+Workstation\+By\+Client\+Id (\begin{DoxyParamCaption}\item[{ulong}]{client\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-Finds the workstation with the passed id 
+Finds the workstation with the passed client id 
 
 
 \begin{DoxyParams}{Parameters}
-{\em id} & The id of the workstation to find\\
+{\em id} & The client id to search for\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -59,7 +63,46 @@ The workstation if found, else null
 \end{DoxyReturn}
 
 
-Definition at line 155 of file Object\+Spawn\+Controller.\+cs.
+Definition at line 178 of file Object\+Spawn\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller_a4cf4892b29790db5a08a1e28a2e32e3a}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller_a4cf4892b29790db5a08a1e28a2e32e3a}} 
+\index{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectSpawnController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectSpawnController}!FindWorkstationById@{FindWorkstationById}}
+\index{FindWorkstationById@{FindWorkstationById}!SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectSpawnController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectSpawnController}}
+\doxysubsubsection{\texorpdfstring{FindWorkstationById()}{FindWorkstationById()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_i_workstation}{IWorkstation}} Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Scenes.\+Kitchen.\+Object\+Spawn\+Controller.\+Find\+Workstation\+By\+Id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_spawned_object_id}{Spawned\+Object\+Id}}}]{workstation\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Finds the workstation with the passed id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em workstation\+Id} & The id of the workstation to find\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The workstation if found, else null
+\end{DoxyReturn}
+
+
+Definition at line 157 of file Object\+Spawn\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller_aa519530b61ad19e9aa2ed031c45af35c}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller_aa519530b61ad19e9aa2ed031c45af35c}} 
+\index{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectSpawnController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectSpawnController}!FindWorkstationWithNoAssignedClient@{FindWorkstationWithNoAssignedClient}}
+\index{FindWorkstationWithNoAssignedClient@{FindWorkstationWithNoAssignedClient}!SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectSpawnController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectSpawnController}}
+\doxysubsubsection{\texorpdfstring{FindWorkstationWithNoAssignedClient()}{FindWorkstationWithNoAssignedClient()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_i_workstation}{IWorkstation}} Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Scenes.\+Kitchen.\+Object\+Spawn\+Controller.\+Find\+Workstation\+With\+No\+Assigned\+Client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Finds a workstation with no assigned client 
+
+\begin{DoxyReturn}{Returns}
+The workstation if found, else null
+\end{DoxyReturn}
+
+
+Definition at line 198 of file Object\+Spawn\+Controller.\+cs.
 
 \mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller_a2a5bd7b2bea20980954c4022098485ea}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller_a2a5bd7b2bea20980954c4022098485ea}} 
 \index{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectSpawnController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectSpawnController}!SpawnFood@{SpawnFood}}
@@ -78,7 +121,7 @@ Spawns food at the passed transform
 \end{DoxyParams}
 
 
-Definition at line 118 of file Object\+Spawn\+Controller.\+cs.
+Definition at line 120 of file Object\+Spawn\+Controller.\+cs.
 
 \mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller_ab50b01dd9c3cb449ad2f0896bebdb234}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller_ab50b01dd9c3cb449ad2f0896bebdb234}} 
 \index{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectSpawnController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectSpawnController}!SpawnWorkstationItem@{SpawnWorkstationItem}}

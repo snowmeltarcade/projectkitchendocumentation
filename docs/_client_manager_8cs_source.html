@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('_client_manager_8cs_source.html',''); 
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                <span class="keywordflow">if</span> (NetworkManager.Singleton is <span class="keyword">null</span>)</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                    <a class="code" href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.LogError(<span class="stringliteral">&quot;Network manager has been destroyed during connection.&quot;</span>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                    <a class="code" href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log(<span class="stringliteral">&quot;Network manager has been destroyed during connection.&quot;</span>);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                    <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                }</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            }</div>
@@ -165,30 +165,35 @@ $(document).ready(function(){initNavTree('_client_manager_8cs_source.html',''); 
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">void</span> SetupNetworkCallbacks()</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            NetworkManager.Singleton.SceneManager.OnSceneEvent += sceneEvent =&gt;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            NetworkManager.Singleton.OnTransportFailure += () =&gt;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                <a class="code" href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log($<span class="stringliteral">&quot;Scene event: {sceneEvent.SceneEventType}&quot;</span>);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                <a class="code" href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log(<span class="stringliteral">&quot;Client network transport failure.&quot;</span>);</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            };</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            NetworkManager.Singleton.SceneManager.OnLoad += (id, name, mode, operation) =&gt;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            NetworkManager.Singleton.SceneManager.OnSceneEvent += sceneEvent =&gt;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            {</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                <a class="code" href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log($<span class="stringliteral">&quot;Request to load network scene: {name}&quot;</span>);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                <a class="code" href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log($<span class="stringliteral">&quot;Scene event: {sceneEvent.SceneEventType}&quot;</span>);</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            };</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            NetworkManager.Singleton.SceneManager.OnLoadComplete += (id, name, mode) =&gt;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            NetworkManager.Singleton.SceneManager.OnLoad += (id, name, mode, operation) =&gt;</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            {</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                <a class="code" href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log($<span class="stringliteral">&quot;Request to load network scene complete: {name}&quot;</span>);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                <a class="code" href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log($<span class="stringliteral">&quot;Request to load network scene: {name}&quot;</span>);</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            };</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            NetworkManager.Singleton.SceneManager.OnLoadEventCompleted += (name, mode, completed, @out) =&gt;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            NetworkManager.Singleton.SceneManager.OnLoadComplete += (id, name, mode) =&gt;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            {</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                <a class="code" href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log($<span class="stringliteral">&quot;Scene loaded on all clients: {name}&quot;</span>);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                <a class="code" href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log($<span class="stringliteral">&quot;Request to load network scene complete: {name}&quot;</span>);</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            };</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        }</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">        #endregion</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    }</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            NetworkManager.Singleton.SceneManager.OnLoadEventCompleted += (name, mode, completed, @out) =&gt;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                <a class="code" href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log($<span class="stringliteral">&quot;Scene loaded on all clients: {name}&quot;</span>);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            };</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        }</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">        #endregion</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    }</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;}</div>
 <div class="ttc" id="a_game_runner_8cs_html_a0100be52d45f14348918ea69ec09f959"><div class="ttname"><a href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a></div><div class="ttdeci">UnityEngine.Debug Debug</div><div class="ttdef"><b>Definition:</b> <a href="_game_runner_8cs_source.html#l00008">GameRunner.cs:8</a></div></div>
 <div class="ttc" id="anamespace_snow_melt_arcade_1_1_project_kitchen_1_1_networking_html"><div class="ttname"><a href="namespace_snow_melt_arcade_1_1_project_kitchen_1_1_networking.html">SnowMeltArcade.ProjectKitchen.Networking</a></div><div class="ttdef"><b>Definition:</b> <a href="_client_manager_8cs_source.html#l00007">ClientManager.cs:8</a></div></div>
 <div class="ttc" id="anamespace_snow_melt_arcade_1_1_project_kitchen_1_1_unity_services_html"><div class="ttname"><a href="namespace_snow_melt_arcade_1_1_project_kitchen_1_1_unity_services.html">SnowMeltArcade.ProjectKitchen.UnityServices</a></div><div class="ttdef"><b>Definition:</b> <a href="_authentication_manager_8cs_source.html#l00006">AuthenticationManager.cs:7</a></div></div>

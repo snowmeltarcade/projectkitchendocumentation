@@ -3,6 +3,6 @@ var class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_
     [ "CopyServerConnectionCodeToClipboard", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_server_details_controller.html#ad36f030a305acf039bd9c289fdf902db", null ],
     [ "CopyServerIPAddressToClipboard", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_server_details_controller.html#a6c81f2609cc8c8670cbd4cb249a7b22f", null ],
     [ "SetServerConnectionCode", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_server_details_controller.html#a4d3e4c863c9827e969c43a01eeb769e3", null ],
-    [ "ShowConnectionCodeServerDetailsScreen", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_server_details_controller.html#acc5290dcb855425acb3b52b42e19abed", null ],
-    [ "ShowLanServerDetailsScreen", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_server_details_controller.html#abdb43be85a7f4669e0c77f3ef18693d6", null ]
+    [ "ShowConnectionCodeServerDetailsScreen", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_server_details_controller.html#aa7b3d1f2159873d6c1cd3f87db50759a", null ],
+    [ "ShowLanServerDetailsScreen", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_server_details_controller.html#ad56083543dc7e7f71e8ae3e0d94f6628", null ]
 ];

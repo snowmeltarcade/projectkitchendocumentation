@@ -103,11 +103,12 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <li>AreLocationsValid()
 : <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_grid.html#a67353a768667bee0077311e3ac66f653">SnowMeltArcade.ProjectKitchen.Kitchen.WorkstationGrid</a>
 </li>
-<li>AssignClientsToWorkstations()
-: <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_client_controller.html#a5ed016c8d6188d2518da39b4d7b6905b">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ClientController</a>
-</li>
 <li>AssignClientToWorkstation()
 : <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_client_controller.html#a826c3e857d8ece315542bd153e2e132d">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ClientController</a>
+</li>
+<li>AssignedClientId
+: <a class="el" href="interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_i_workstation.html#abd6e8cf20d34fab158aa6b9e1f215ffa">SnowMeltArcade.ProjectKitchen.Kitchen.IWorkstation</a>
+, <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_controller.html#abdab7951ace2b1b18e78bcd2aa544c63">SnowMeltArcade.ProjectKitchen.Kitchen.WorkstationController</a>
 </li>
 <li>AssignToWorkstation()
 : <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller.html#aa97b1964a56529a8769b2bfd3458e1fc">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.PlayerController</a>
@@ -192,8 +193,14 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 
 
 <h3><a id="index_f"></a>- f -</h3><ul>
-<li>FindWorkstationWithId()
-: <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller.html#acf6d6df373dcecfa7209c5f88e6f5389">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectSpawnController</a>
+<li>FindWorkstationByClientId()
+: <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller.html#aeb429da35005a63417e5c84d7aed9853">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectSpawnController</a>
+</li>
+<li>FindWorkstationById()
+: <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller.html#a4cf4892b29790db5a08a1e28a2e32e3a">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectSpawnController</a>
+</li>
+<li>FindWorkstationWithNoAssignedClient()
+: <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller.html#aa519530b61ad19e9aa2ed031c45af35c">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectSpawnController</a>
 </li>
 <li>FoodIsAttachedToWorkstationItem()
 : <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller.html#a44277adcce04c9e3fc2585ffdc42a4fa">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.PlayerController</a>
@@ -366,14 +373,14 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 : <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_controller.html#a845636d1e67495128769eb47602013c7">SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.UIController</a>
 </li>
 <li>ShowConnectionCodeServerDetailsScreen()
-: <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_server_details_controller.html#acc5290dcb855425acb3b52b42e19abed">SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.UIServerDetailsController</a>
+: <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_server_details_controller.html#aa7b3d1f2159873d6c1cd3f87db50759a">SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.UIServerDetailsController</a>
 </li>
 <li>ShowConnectToServerScreen()
 : <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_configuration_controller.html#a560c4a42577cbb93f1aa0bbf82977a93">SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.UIConfigurationController</a>
 , <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_controller.html#adcd3d57c28bdfe0d305eef0d3ccc3d75">SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.UIController</a>
 </li>
 <li>ShowLanServerDetailsScreen()
-: <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_server_details_controller.html#abdb43be85a7f4669e0c77f3ef18693d6">SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.UIServerDetailsController</a>
+: <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_server_details_controller.html#ad56083543dc7e7f71e8ae3e0d94f6628">SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.UIServerDetailsController</a>
 </li>
 <li>ShowSigningInScreen()
 : <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_u_i_controller.html#a9c328a797028ed73adf4973fc5e4755b">SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.UIController</a>
@@ -399,7 +406,7 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 : <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_scene_controller.html#af882554a7ae6c1a8a56876e659951f15">SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.SceneController</a>
 </li>
 <li>StartServer()
-: <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_scene_controller.html#a59fe225707f4fae3bb96a9b38092bd22">SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.SceneController</a>
+: <a class="el" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_network_connect_1_1_scene_controller.html#a36a0782dcfe24f9aa32a4cb486bf3412">SnowMeltArcade.ProjectKitchen.Scenes.NetworkConnect.SceneController</a>
 </li>
 <li>State
 : <a class="el" href="interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_i_food.html#affe46ba31a0c882315fb078d7126eac1">SnowMeltArcade.ProjectKitchen.Kitchen.IFood</a>

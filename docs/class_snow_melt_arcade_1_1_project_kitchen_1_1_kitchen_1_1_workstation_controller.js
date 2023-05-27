@@ -2,6 +2,7 @@ var class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_contr
 [
     [ "Activate", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_controller.html#a7d0a8e52a3cf4721150e3b3a63001945", null ],
     [ "Configure", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_controller.html#aaa24463c6c07141a55e5eacee3515e93", null ],
+    [ "AssignedClientId", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_controller.html#abdab7951ace2b1b18e78bcd2aa544c63", null ],
     [ "ClientData", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_controller.html#abb6ed2e7f6c3bbc452018b4f38ccb6f8", null ],
     [ "GameObject", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_controller.html#a096df3a8963a2ae3d2be67bfde0ceee1", null ],
     [ "Id", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_controller.html#a820c57a16295a1f5e7f0a7e3e99763b2", null ],

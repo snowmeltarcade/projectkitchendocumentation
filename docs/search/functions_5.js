@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['findworkstationwithid_319',['FindWorkstationWithId',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller.html#acf6d6df373dcecfa7209c5f88e6f5389',1,'SnowMeltArcade::ProjectKitchen::Scenes::Kitchen::ObjectSpawnController']]],
-  ['foodisattachedtoworkstationitem_320',['FoodIsAttachedToWorkstationItem',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller.html#a44277adcce04c9e3fc2585ffdc42a4fa',1,'SnowMeltArcade::ProjectKitchen::Scenes::Kitchen::PlayerController']]]
+  ['findworkstationbyclientid_320',['FindWorkstationByClientId',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller.html#aeb429da35005a63417e5c84d7aed9853',1,'SnowMeltArcade::ProjectKitchen::Scenes::Kitchen::ObjectSpawnController']]],
+  ['findworkstationbyid_321',['FindWorkstationById',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller.html#a4cf4892b29790db5a08a1e28a2e32e3a',1,'SnowMeltArcade::ProjectKitchen::Scenes::Kitchen::ObjectSpawnController']]],
+  ['findworkstationwithnoassignedclient_322',['FindWorkstationWithNoAssignedClient',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller.html#aa519530b61ad19e9aa2ed031c45af35c',1,'SnowMeltArcade::ProjectKitchen::Scenes::Kitchen::ObjectSpawnController']]],
+  ['foodisattachedtoworkstationitem_323',['FoodIsAttachedToWorkstationItem',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller.html#a44277adcce04c9e3fc2585ffdc42a4fa',1,'SnowMeltArcade::ProjectKitchen::Scenes::Kitchen::PlayerController']]]
 ];
