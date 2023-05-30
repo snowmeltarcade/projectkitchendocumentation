@@ -107,33 +107,37 @@ $(document).ready(function(){initNavTree('_lan_manager_8cs_source.html',''); ini
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                <span class="keywordflow">return</span> networkTransport;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            }</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        }        </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        }</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">        #endregion</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">        #region Public Static Methods</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> SetServerConnectionDetails(<span class="keywordtype">string</span> bindingIp, ushort port)</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        {</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            LanManager.NetworkTransport.ConnectionData.ServerListenAddress = bindingIp;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            LanManager.NetworkTransport.ConnectionData.Port = port;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <a class="code" href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log($<span class="stringliteral">&quot;Set server ip and port to: &quot;</span> +</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                      $<span class="stringliteral">&quot;{LanManager.NetworkTransport.ConnectionData.ServerListenAddress}:{LanManager.NetworkTransport.ConnectionData.Port}&quot;</span>);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> SetClientConnectionDetails(<span class="keywordtype">string</span> serverIp, ushort serverPort)</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            LanManager.NetworkTransport.ConnectionData.Address = serverIp;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            LanManager.NetworkTransport.ConnectionData.Port = serverPort;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <a class="code" href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log($<span class="stringliteral">&quot;Set client to connect to server ip and port: &quot;</span> +</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                      $<span class="stringliteral">&quot;{LanManager.NetworkTransport.ConnectionData.Address}:{LanManager.NetworkTransport.ConnectionData.Port}&quot;</span>);   </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">        #endregion</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <a class="code" href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log(</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                $<span class="stringliteral">&quot;Set server ip and port to: &quot;</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                    + $<span class="stringliteral">&quot;{LanManager.NetworkTransport.ConnectionData.ServerListenAddress}:{LanManager.NetworkTransport.ConnectionData.Port}&quot;</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            );</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> SetClientConnectionDetails(<span class="keywordtype">string</span> serverIp, ushort serverPort)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            LanManager.NetworkTransport.ConnectionData.Address = serverIp;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            LanManager.NetworkTransport.ConnectionData.Port = serverPort;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <a class="code" href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log(</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                $<span class="stringliteral">&quot;Set client to connect to server ip and port: &quot;</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                    + $<span class="stringliteral">&quot;{LanManager.NetworkTransport.ConnectionData.Address}:{LanManager.NetworkTransport.ConnectionData.Port}&quot;</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            );</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">        #endregion</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
 <div class="ttc" id="a_game_runner_8cs_html_a0100be52d45f14348918ea69ec09f959"><div class="ttname"><a href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a></div><div class="ttdeci">UnityEngine.Debug Debug</div><div class="ttdef"><b>Definition:</b> <a href="_game_runner_8cs_source.html#l00008">GameRunner.cs:8</a></div></div>
 <div class="ttc" id="a_relay_manager_8cs_html_aef19bab18b9814edeef255c43e4f6bbc"><div class="ttname"><a href="_relay_manager_8cs.html#aef19bab18b9814edeef255c43e4f6bbc">Object</a></div><div class="ttdeci">UnityEngine.Object Object</div><div class="ttdef"><b>Definition:</b> <a href="_relay_manager_8cs_source.html#l00011">RelayManager.cs:11</a></div></div>
 <div class="ttc" id="anamespace_snow_melt_arcade_1_1_project_kitchen_1_1_networking_html"><div class="ttname"><a href="namespace_snow_melt_arcade_1_1_project_kitchen_1_1_networking.html">SnowMeltArcade.ProjectKitchen.Networking</a></div><div class="ttdef"><b>Definition:</b> <a href="_client_manager_8cs_source.html#l00007">ClientManager.cs:8</a></div></div>
