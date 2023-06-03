@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['workstationclientdata_369',['WorkstationClientData',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_client_data.html#aae530062f5b74305711c00270dc2bb24',1,'SnowMeltArcade.ProjectKitchen.Kitchen.WorkstationClientData.WorkstationClientData()'],['../class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_client_data.html#aa72594e4b19bb1ca5c6407318b6b9e56',1,'SnowMeltArcade.ProjectKitchen.Kitchen.WorkstationClientData.WorkstationClientData(SpawnedObjectId id, Vector3 position)']]],
-  ['workstationgrid_370',['WorkstationGrid',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_grid.html#affc0ec80acfec00bf66964060dbff7b6',1,'SnowMeltArcade::ProjectKitchen::Kitchen::WorkstationGrid']]]
+  ['toggleselectedworkstationsection_383',['ToggleSelectedWorkstationSection',['../class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_client_state.html#a593523f29226e5326cf569eb418fead7',1,'SnowMeltArcade::ProjectKitchen::Kitchen::ClientState']]],
+  ['tostring_384',['ToString',['../struct_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_spawned_object_id.html#a2178b0e5f5fa0d4e5dc4eb88c4723790',1,'SnowMeltArcade::ProjectKitchen::Kitchen::SpawnedObjectId']]]
 ];

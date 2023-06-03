@@ -9,8 +9,12 @@ class \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1
 \begin{DoxyCompactList}\small\item\em Manages interactions with the connected clients \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller}{Kitchen\+Controller}}
 \begin{DoxyCompactList}\small\item\em Manages the kitchen level and networking between the server and clients. This is designed to run in server space. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_picker_controller}{Object\+Picker\+Controller}}
+\begin{DoxyCompactList}\small\item\em Manages the object picker. This works by having an invisible plane collider that a ray from the mouse position intersects. An empty game object is placed at the hit location. Any object that the player selects will have its transform set as a child of that game object. This helps to ensure that the height of the selected object is above any actual objects in the scene. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller}{Object\+Spawn\+Controller}}
 \begin{DoxyCompactList}\small\item\em Manages spawning objects in the game world \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_pickable_object_controller}{Pickable\+Object\+Controller}}
+\begin{DoxyCompactList}\small\item\em Allows the attached game object to work with the {\ttfamily \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_picker_controller}{Object\+Picker\+Controller}}}. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller}{Player\+Controller}}
 \begin{DoxyCompactList}\small\item\em Manages the player on the client \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_u_i_controller}{UIController}}

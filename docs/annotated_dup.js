@@ -39,7 +39,9 @@ var annotated_dup =
             [ "CameraController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_camera_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_camera_controller" ],
             [ "ClientController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_client_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_client_controller" ],
             [ "KitchenController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller" ],
+            [ "ObjectPickerController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_picker_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_picker_controller" ],
             [ "ObjectSpawnController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_spawn_controller" ],
+            [ "PickableObjectController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_pickable_object_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_pickable_object_controller" ],
             [ "PlayerController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_player_controller" ],
             [ "UIController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_u_i_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_u_i_controller" ]
           ] ],

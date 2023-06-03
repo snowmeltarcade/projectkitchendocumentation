@@ -1,0 +1,91 @@
+\hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_picker_controller}{}\doxysection{Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Scenes.\+Kitchen.\+Object\+Picker\+Controller Class Reference}
+\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_picker_controller}\index{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectPickerController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectPickerController}}
+
+
+Manages the object picker. This works by having an invisible plane collider that a ray from the mouse position intersects. An empty game object is placed at the hit location. Any object that the player selects will have its transform set as a child of that game object. This helps to ensure that the height of the selected object is above any actual objects in the scene.  
+
+
+Inheritance diagram for Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Scenes.\+Kitchen.\+Object\+Picker\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_picker_controller}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_picker_controller_a71879e65187a8d0eaf57cd25eb1b5dac}{Set\+Pick\+Location\+In\+Screen\+Space}} (Vector2 position)
+\begin{DoxyCompactList}\small\item\em Sets the world position of the object pick parent from a 2d screen position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_picker_controller_a47d916da3e9392c692644aaa20118ff8}{Pick\+Object}} (Transform picked\+Object)
+\begin{DoxyCompactList}\small\item\em Sets the passed object to be a child of the object pick parent. This object\textquotesingle{}s transform parent is saved and will be restored when the object is released. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_picker_controller_aa22e4f8a079556c48098db96dd166ba2}{Release\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Release the currently picked parent and restores its previous transform parent \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages the object picker. This works by having an invisible plane collider that a ray from the mouse position intersects. An empty game object is placed at the hit location. Any object that the player selects will have its transform set as a child of that game object. This helps to ensure that the height of the selected object is above any actual objects in the scene. 
+
+The game object must have a {\ttfamily \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_pickable_object_controller}{Pickable\+Object\+Controller}}} component to be picked. If this component is not attached, this controller will add this component automatically.
+
+Definition at line 19 of file Object\+Picker\+Controller.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_picker_controller_a47d916da3e9392c692644aaa20118ff8}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_picker_controller_a47d916da3e9392c692644aaa20118ff8}} 
+\index{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectPickerController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectPickerController}!PickObject@{PickObject}}
+\index{PickObject@{PickObject}!SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectPickerController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectPickerController}}
+\doxysubsubsection{\texorpdfstring{PickObject()}{PickObject()}}
+{\footnotesize\ttfamily void Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Scenes.\+Kitchen.\+Object\+Picker\+Controller.\+Pick\+Object (\begin{DoxyParamCaption}\item[{Transform}]{picked\+Object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the passed object to be a child of the object pick parent. This object\textquotesingle{}s transform parent is saved and will be restored when the object is released. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em picked\+Object} & The object to pick\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 81 of file Object\+Picker\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_picker_controller_aa22e4f8a079556c48098db96dd166ba2}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_picker_controller_aa22e4f8a079556c48098db96dd166ba2}} 
+\index{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectPickerController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectPickerController}!ReleaseObject@{ReleaseObject}}
+\index{ReleaseObject@{ReleaseObject}!SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectPickerController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectPickerController}}
+\doxysubsubsection{\texorpdfstring{ReleaseObject()}{ReleaseObject()}}
+{\footnotesize\ttfamily void Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Scenes.\+Kitchen.\+Object\+Picker\+Controller.\+Release\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Release the currently picked parent and restores its previous transform parent 
+
+
+
+Definition at line 99 of file Object\+Picker\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_picker_controller_a71879e65187a8d0eaf57cd25eb1b5dac}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_picker_controller_a71879e65187a8d0eaf57cd25eb1b5dac}} 
+\index{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectPickerController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectPickerController}!SetPickLocationInScreenSpace@{SetPickLocationInScreenSpace}}
+\index{SetPickLocationInScreenSpace@{SetPickLocationInScreenSpace}!SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectPickerController@{SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectPickerController}}
+\doxysubsubsection{\texorpdfstring{SetPickLocationInScreenSpace()}{SetPickLocationInScreenSpace()}}
+{\footnotesize\ttfamily void Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Scenes.\+Kitchen.\+Object\+Picker\+Controller.\+Set\+Pick\+Location\+In\+Screen\+Space (\begin{DoxyParamCaption}\item[{Vector2}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the world position of the object pick parent from a 2d screen position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The 2d screen position\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 55 of file Object\+Picker\+Controller.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/runner/work/projectkitchen/projectkitchen/src/\+Project\+Kitchen/\+Assets/\+Scripts/\+Scenes/\+Kitchen/\mbox{\hyperlink{_object_picker_controller_8cs}{Object\+Picker\+Controller.\+cs}}\end{DoxyCompactItemize}

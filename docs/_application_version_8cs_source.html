@@ -85,64 +85,67 @@ $(document).ready(function(){initNavTree('_application_version_8cs_source.html',
 <div class="title">ApplicationVersion.cs</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_application_version_8cs.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_system.html">System</a>;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_system.html">System</a>.IO;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> UnityEditor;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="namespace_snow_melt_arcade_1_1_project_kitchen_1_1_editor.html">    6</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_snow_melt_arcade_1_1_project_kitchen_1_1_editor_1_1_c_i_c_d.html">SnowMeltArcade.ProjectKitchen.Editor.CICD</a></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span>ApplicationVersion</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">        #region Private Static Properties</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">private</span> <span class="keyword">const</span> <span class="keywordtype">string</span> ApplicationVersionFileName = <span class="stringliteral">&quot;application_version.txt&quot;</span>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">        #endregion</span></div>
+<a href="_application_version_8cs.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#if UNITY_EDITOR</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_system.html">System</a>;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_system.html">System</a>.IO;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using</span> UnityEditor;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>SnowMeltArcade.ProjectKitchen.Editor.CICD</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span>ApplicationVersion</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">        #region Private Static Properties</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">private</span> <span class="keyword">const</span> <span class="keywordtype">string</span> ApplicationVersionFileName = <span class="stringliteral">&quot;application_version.txt&quot;</span>;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">        #region Public Static Methods</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">        #endregion</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> SaveApplicationVersion()</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            var version = UnityEngine.Application.version;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <a class="code" href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log(</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                $<span class="stringliteral">&quot;Saving application version: {version} into&quot;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                    + $<span class="stringliteral">&quot; file: {ApplicationVersion.ApplicationVersionFileName}&quot;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            );</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            File.WriteAllText(ApplicationVersion.ApplicationVersionFileName, version);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        }</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> BumpApplicationVersion()</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            var currentVersion = UnityEngine.Application.version;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            var majorPart = 0;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            var minorPart = 0;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            var parts = currentVersion.Split(<span class="charliteral">&#39;.&#39;</span>);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordflow">if</span> (parts.Length == 2)</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                majorPart = Int32.Parse(parts[0]);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                minorPart = Int32.Parse(parts[1]);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            minorPart++;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">        #region Public Static Methods</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> SaveApplicationVersion()</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            var version = UnityEngine.Application.version;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <a class="code" href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log(</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                $<span class="stringliteral">&quot;Saving application version: {version} into&quot;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                    + $<span class="stringliteral">&quot; file: {ApplicationVersion.ApplicationVersionFileName}&quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            );</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            File.WriteAllText(ApplicationVersion.ApplicationVersionFileName, version);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> BumpApplicationVersion()</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            var currentVersion = UnityEngine.Application.version;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            var majorPart = 0;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            var minorPart = 0;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            var parts = currentVersion.Split(<span class="charliteral">&#39;.&#39;</span>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordflow">if</span> (parts.Length == 2)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                majorPart = Int32.Parse(parts[0]);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                minorPart = Int32.Parse(parts[1]);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            }</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            var newVersion = $<span class="stringliteral">&quot;{majorPart}.{minorPart}&quot;</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            minorPart++;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="comment">// `Application.version` is read only, so we have to set the version here</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            PlayerSettings.bundleVersion = newVersion;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <a class="code" href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log($<span class="stringliteral">&quot;Set version to: {UnityEngine.Application.version}&quot;</span>);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        }</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">        #endregion</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            var newVersion = $<span class="stringliteral">&quot;{majorPart}.{minorPart}&quot;</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="comment">// `Application.version` is read only, so we have to set the version here</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            PlayerSettings.bundleVersion = newVersion;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <a class="code" href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log($<span class="stringliteral">&quot;Set version to: {UnityEngine.Application.version}&quot;</span>);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">        #endregion</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="a_game_runner_8cs_html_a0100be52d45f14348918ea69ec09f959"><div class="ttname"><a href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a></div><div class="ttdeci">UnityEngine.Debug Debug</div><div class="ttdef"><b>Definition:</b> <a href="_game_runner_8cs_source.html#l00008">GameRunner.cs:8</a></div></div>
-<div class="ttc" id="anamespace_snow_melt_arcade_1_1_project_kitchen_1_1_editor_1_1_c_i_c_d_html"><div class="ttname"><a href="namespace_snow_melt_arcade_1_1_project_kitchen_1_1_editor_1_1_c_i_c_d.html">SnowMeltArcade.ProjectKitchen.Editor.CICD</a></div><div class="ttdef"><b>Definition:</b> <a href="_application_version_8cs_source.html#l00006">ApplicationVersion.cs:7</a></div></div>
 <div class="ttc" id="anamespace_system_html"><div class="ttname"><a href="namespace_system.html">System</a></div><div class="ttdef"><b>Definition:</b> <a href="_enable_records_8cs_source.html#l00005">EnableRecords.cs:6</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
