@@ -343,27 +343,19 @@ $(document).ready(function(){initNavTree('_object_spawn_controller_8cs_source.ht
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;            workstationController.Configure(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        }</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160; </div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        <span class="keyword">private</span> Vector3 GetPositionAtGridLocation(uint x, uint y)</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        {</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;            <span class="comment">// we want the position at the center of the grid location, so add</span></div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;            <span class="comment">// an offset</span></div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;            var offset = -0.5f;</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;            Vector3 position = <span class="keyword">new</span>(x + offset, 0.0f, y + offset);</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160; </div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;            <span class="keywordflow">return</span> position;</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        }</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160; </div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> EnsureIsServer()</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        {</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;            <span class="keywordflow">if</span> (!this.IsServer)</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;            {</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException(<span class="stringliteral">&quot;This method must only be run on the server.&quot;</span>);</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;            }</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        }</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160; </div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="preprocessor">        #endregion</span></div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    }</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;}</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        <span class="keyword">private</span> Vector3 GetPositionAtGridLocation(uint x, uint y) =&gt; <span class="keyword">new</span>(x, 0.0f, y);</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160; </div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> EnsureIsServer()</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        {</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;            <span class="keywordflow">if</span> (!this.IsServer)</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;            {</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException(<span class="stringliteral">&quot;This method must only be run on the server.&quot;</span>);</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;            }</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        }</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160; </div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="preprocessor">        #endregion</span></div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    }</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;}</div>
 <div class="ttc" id="a_client_controller_8cs_html_a832e8f52fca5a678819ec96269dcb532"><div class="ttname"><a href="_client_controller_8cs.html#a832e8f52fca5a678819ec96269dcb532">Random</a></div><div class="ttdeci">UnityEngine.Random Random</div><div class="ttdef"><b>Definition:</b> <a href="_client_controller_8cs_source.html#l00008">ClientController.cs:8</a></div></div>
 <div class="ttc" id="a_game_runner_8cs_html_a0100be52d45f14348918ea69ec09f959"><div class="ttname"><a href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a></div><div class="ttdeci">UnityEngine.Debug Debug</div><div class="ttdef"><b>Definition:</b> <a href="_game_runner_8cs_source.html#l00008">GameRunner.cs:8</a></div></div>
 <div class="ttc" id="aclass_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller_html"><div class="ttname"><a href="class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller.html">SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController</a></div><div class="ttdoc">Controls some kind of food</div><div class="ttdef"><b>Definition:</b> <a href="_some_food_controller_8cs_source.html#l00011">SomeFoodController.cs:12</a></div></div>

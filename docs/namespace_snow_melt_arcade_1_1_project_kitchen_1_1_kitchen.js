@@ -7,6 +7,7 @@ var namespace_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen =
     [ "SomeFoodController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller" ],
     [ "SpawnedObjectId", "struct_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_spawned_object_id.html", "struct_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_spawned_object_id" ],
     [ "WorkstationClientData", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_client_data.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_client_data" ],
+    [ "WorkstationColliderController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_collider_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_collider_controller" ],
     [ "WorkstationController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_controller" ],
     [ "WorkstationGrid", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_grid.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_grid" ],
     [ "FoodStates", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen.html#af1de9533e7c32b9ea487ad99f364f0ca", [

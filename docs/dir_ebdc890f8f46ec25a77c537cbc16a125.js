@@ -20,6 +20,9 @@ var dir_ebdc890f8f46ec25a77c537cbc16a125 =
     [ "WorkstationClientData.cs", "_workstation_client_data_8cs.html", [
       [ "WorkstationClientData", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_client_data.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_client_data" ]
     ] ],
+    [ "WorkstationColliderController.cs", "_workstation_collider_controller_8cs.html", [
+      [ "WorkstationColliderController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_collider_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_collider_controller" ]
+    ] ],
     [ "WorkstationController.cs", "_workstation_controller_8cs.html", [
       [ "WorkstationController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_controller" ]
     ] ],

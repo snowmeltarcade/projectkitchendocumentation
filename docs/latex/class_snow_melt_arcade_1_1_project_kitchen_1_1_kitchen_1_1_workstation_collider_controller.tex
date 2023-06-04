@@ -1,0 +1,56 @@
+\hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_collider_controller}{}\doxysection{Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Kitchen.\+Workstation\+Collider\+Controller Class Reference}
+\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_collider_controller}\index{SnowMeltArcade.ProjectKitchen.Kitchen.WorkstationColliderController@{SnowMeltArcade.ProjectKitchen.Kitchen.WorkstationColliderController}}
+
+
+Creates the workstation collider.  
+
+
+Inheritance diagram for Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Kitchen.\+Workstation\+Collider\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_collider_controller}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_collider_controller_a7600008ceb10c580ed735df977f7b6d9}{Construct}} (List$<$ Vector2\+Int $>$ workstation\+Locations, Vector2 workstation\+Size)
+\begin{DoxyCompactList}\small\item\em Constructs the mesh and collider based on the passed workstation locations and size \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Creates the workstation collider. 
+
+If each workstation has its own box collider, these colliders touch each other when the workstations are next to each other. When a sphere collider, like food uses, rolls over the sides of two workstations, it will bounce or have an unintuitive collision. We are trying to simulate a continuous flat surface, but this is not what is happening. We need to create an actual single flat surface over all workstations to avoid this problem.
+
+Definition at line 19 of file Workstation\+Collider\+Controller.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_collider_controller_a7600008ceb10c580ed735df977f7b6d9}\label{class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_collider_controller_a7600008ceb10c580ed735df977f7b6d9}} 
+\index{SnowMeltArcade.ProjectKitchen.Kitchen.WorkstationColliderController@{SnowMeltArcade.ProjectKitchen.Kitchen.WorkstationColliderController}!Construct@{Construct}}
+\index{Construct@{Construct}!SnowMeltArcade.ProjectKitchen.Kitchen.WorkstationColliderController@{SnowMeltArcade.ProjectKitchen.Kitchen.WorkstationColliderController}}
+\doxysubsubsection{\texorpdfstring{Construct()}{Construct()}}
+{\footnotesize\ttfamily void Snow\+Melt\+Arcade.\+Project\+Kitchen.\+Kitchen.\+Workstation\+Collider\+Controller.\+Construct (\begin{DoxyParamCaption}\item[{List$<$ Vector2\+Int $>$}]{workstation\+Locations,  }\item[{Vector2}]{workstation\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs the mesh and collider based on the passed workstation locations and size 
+
+
+\begin{DoxyParams}{Parameters}
+{\em workstation\+Locations} & The locations of the workstations\\
+\hline
+{\em workstation\+Size} & The size of each workstation\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 38 of file Workstation\+Collider\+Controller.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/runner/work/projectkitchen/projectkitchen/src/\+Project\+Kitchen/\+Assets/\+Scripts/\+Kitchen/\mbox{\hyperlink{_workstation_collider_controller_8cs}{Workstation\+Collider\+Controller.\+cs}}\end{DoxyCompactItemize}

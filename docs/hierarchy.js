@@ -36,10 +36,12 @@ var hierarchy =
     ] ],
     [ "NetworkBehaviour", null, [
       [ "SnowMeltArcade.ProjectKitchen.Kitchen.SomeFoodController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_some_food_controller.html", null ],
+      [ "SnowMeltArcade.ProjectKitchen.Kitchen.WorkstationColliderController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_collider_controller.html", null ],
       [ "SnowMeltArcade.ProjectKitchen.Kitchen.WorkstationController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_controller.html", null ],
       [ "SnowMeltArcade.ProjectKitchen.Kitchen.WorkstationItems.ChoppingBoardController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_items_1_1_chopping_board_controller.html", null ],
       [ "SnowMeltArcade.ProjectKitchen.Kitchen.WorkstationItems.FoodAttachableController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_items_1_1_food_attachable_controller.html", null ],
       [ "SnowMeltArcade.ProjectKitchen.Kitchen.WorkstationItems.PantryController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_items_1_1_pantry_controller.html", null ],
+      [ "SnowMeltArcade.ProjectKitchen.Scenes.Dev.WorkstationColliderTest.SceneController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_workstation_collider_test_1_1_scene_controller.html", null ],
       [ "SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ClientController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_client_controller.html", null ],
       [ "SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.KitchenController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html", null ],
       [ "SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.ObjectPickerController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_object_picker_controller.html", null ],
