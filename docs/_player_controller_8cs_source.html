@@ -189,7 +189,7 @@ $(document).ready(function(){initNavTree('_player_controller_8cs_source.html',''
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            {</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                var ray = this.playerCamera.<a class="code" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_camera_controller.html#aee396a5c4f58c495e6728e58a2f44168">PlayerCamera</a>.ScreenPointToRay(this.MousePosition);</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                <span class="keywordflow">if</span> (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, <span class="keyword">this</span>.foodLayerMask))</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                <span class="keywordflow">if</span> (Physics.Raycast(ray, out var hit, Mathf.Infinity, <span class="keyword">this</span>.foodLayerMask))</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                {</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                    this.SelectFood(hit.collider.gameObject);</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                }</div>
@@ -289,7 +289,7 @@ $(document).ready(function(){initNavTree('_player_controller_8cs_source.html',''
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        {</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;            var ray = this.playerCamera.<a class="code" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_camera_controller.html#aee396a5c4f58c495e6728e58a2f44168">PlayerCamera</a>.ScreenPointToRay(this.MousePosition);</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160; </div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;            <span class="keywordflow">if</span> (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, <span class="keyword">this</span>.workstationLayerMask))</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;            <span class="keywordflow">if</span> (Physics.Raycast(ray, out var hit, Mathf.Infinity, <span class="keyword">this</span>.workstationLayerMask))</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            {</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                this.SelectWorkstation(hit.collider.gameObject);</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;            }</div>
@@ -318,7 +318,7 @@ $(document).ready(function(){initNavTree('_player_controller_8cs_source.html',''
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;            var ray = this.playerCamera.<a class="code" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_camera_controller.html#aee396a5c4f58c495e6728e58a2f44168">PlayerCamera</a>.ScreenPointToRay(this.MousePosition);</div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160; </div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;            <span class="keywordflow">if</span> (</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                !Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, <span class="keyword">this</span>.workstationLayerMask)</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                !Physics.Raycast(ray, out var hit, Mathf.Infinity, <span class="keyword">this</span>.workstationLayerMask)</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;            )</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;            {</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;                <span class="keywordflow">return</span>;</div>

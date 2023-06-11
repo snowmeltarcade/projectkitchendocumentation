@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('_object_picker_controller_8cs_source.h
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordflow">if</span> (</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                !Physics.Raycast(</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                    ray,</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                    out RaycastHit hit,</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                    out var hit,</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                    Mathf.Infinity,</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                    <span class="keyword">this</span>.colliderPlaneLayerMask</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                )</div>
@@ -167,29 +167,24 @@ $(document).ready(function(){initNavTree('_object_picker_controller_8cs_source.h
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keyword">private</span> <a class="code" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_pickable_object_controller.html">PickableObjectController</a> GetPickableObject(Transform transform)</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        {</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            <span class="keywordflow">if</span> (</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                transform.gameObject.TryGetComponent&lt;<a class="code" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_pickable_object_controller.html">PickableObjectController</a>&gt;(</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                    out var pickableObjectController</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                )</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            )</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            {</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                <span class="keywordflow">return</span> pickableObjectController;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            }</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            <span class="keywordflow">return</span> transform.gameObject.AddComponent&lt;PickableObjectController&gt;();</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        }</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> EnsureIsClient()</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        {</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            <span class="keywordflow">if</span> (!this.IsClient)</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            {</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException(<span class="stringliteral">&quot;This method can only be run on a client.&quot;</span>);</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            }</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        }</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="preprocessor">        #endregion</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    }</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;}</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            <span class="keywordflow">return</span> transform.gameObject.TryGetComponent&lt;<a class="code" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_pickable_object_controller.html">PickableObjectController</a>&gt;(</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                    out var pickableObjectController</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                )</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                ? pickableObjectController</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                : transform.gameObject.AddComponent&lt;<a class="code" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_pickable_object_controller.html">PickableObjectController</a>&gt;();</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> EnsureIsClient()</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        {</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            <span class="keywordflow">if</span> (!this.IsClient)</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            {</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException(<span class="stringliteral">&quot;This method can only be run on a client.&quot;</span>);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            }</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        }</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="preprocessor">        #endregion</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    }</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;}</div>
 <div class="ttc" id="a_game_runner_8cs_html_a0100be52d45f14348918ea69ec09f959"><div class="ttname"><a href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a></div><div class="ttdeci">UnityEngine.Debug Debug</div><div class="ttdef"><b>Definition:</b> <a href="_game_runner_8cs_source.html#l00008">GameRunner.cs:8</a></div></div>
 <div class="ttc" id="aclass_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_camera_controller_html"><div class="ttname"><a href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_camera_controller.html">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.CameraController</a></div><div class="ttdoc">Controls the camera</div><div class="ttdef"><b>Definition:</b> <a href="_camera_controller_8cs_source.html#l00011">CameraController.cs:12</a></div></div>
 <div class="ttc" id="aclass_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_camera_controller_html_aee396a5c4f58c495e6728e58a2f44168"><div class="ttname"><a href="class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_camera_controller.html#aee396a5c4f58c495e6728e58a2f44168">SnowMeltArcade.ProjectKitchen.Scenes.Kitchen.CameraController.PlayerCamera</a></div><div class="ttdeci">Camera PlayerCamera</div><div class="ttdoc">Returns the associated camera</div><div class="ttdef"><b>Definition:</b> <a href="_camera_controller_8cs_source.html#l00024">CameraController.cs:24</a></div></div>
