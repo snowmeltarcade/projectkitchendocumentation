@@ -11,6 +11,7 @@ var namespace_snow_melt_arcade_1_1_project_kitchen =
         [ "Client", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_application.html#a9908fad074edece1e6bb8a6c824dc369a577d7068826de925ea2aec01dbadf5e4", null ]
       ] ]
     ] ],
+    [ "Configuration", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_configuration.html", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_configuration" ],
     [ "Editor", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_editor.html", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_editor" ],
     [ "Kitchen", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen.html", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen" ],
     [ "Networking", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_networking.html", [

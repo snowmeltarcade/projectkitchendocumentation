@@ -1,5 +1,6 @@
 var dir_ebdc890f8f46ec25a77c537cbc16a125 =
 [
+    [ "Environment", "dir_8f8a6d251cfb9cc6cac3cde3bb269000.html", "dir_8f8a6d251cfb9cc6cac3cde3bb269000" ],
     [ "WorkstationItems", "dir_de24e17a6b76fa11d6a4963833db79ce.html", "dir_de24e17a6b76fa11d6a4963833db79ce" ],
     [ "ClientState.cs", "_client_state_8cs.html", [
       [ "ClientState", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_client_state.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_client_state" ]

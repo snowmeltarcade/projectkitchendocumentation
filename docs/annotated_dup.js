@@ -2,12 +2,22 @@ var annotated_dup =
 [
     [ "SnowMeltArcade", "namespace_snow_melt_arcade.html", [
       [ "ProjectKitchen", "namespace_snow_melt_arcade_1_1_project_kitchen.html", [
+        [ "Configuration", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_configuration.html", [
+          [ "Kitchen", "class_snow_melt_arcade_1_1_project_kitchen_1_1_configuration_1_1_kitchen.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_configuration_1_1_kitchen" ],
+          [ "KitchenEnvironment", "class_snow_melt_arcade_1_1_project_kitchen_1_1_configuration_1_1_kitchen_environment.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_configuration_1_1_kitchen_environment" ],
+          [ "KitchenTile", "class_snow_melt_arcade_1_1_project_kitchen_1_1_configuration_1_1_kitchen_tile.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_configuration_1_1_kitchen_tile" ],
+          [ "KitchenTileMap", "class_snow_melt_arcade_1_1_project_kitchen_1_1_configuration_1_1_kitchen_tile_map.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_configuration_1_1_kitchen_tile_map" ]
+        ] ],
         [ "Editor", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_editor.html", [
           [ "Utils", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_editor_1_1_utils.html", [
             [ "GameRunner", "class_snow_melt_arcade_1_1_project_kitchen_1_1_editor_1_1_utils_1_1_game_runner.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_editor_1_1_utils_1_1_game_runner" ]
           ] ]
         ] ],
         [ "Kitchen", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen.html", [
+          [ "Environment", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_environment.html", [
+            [ "KitchenEnvironmentController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_environment_1_1_kitchen_environment_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_environment_1_1_kitchen_environment_controller" ],
+            [ "KitchenTileController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_environment_1_1_kitchen_tile_controller.html", null ]
+          ] ],
           [ "WorkstationItems", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_items.html", [
             [ "ChoppingBoardController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_items_1_1_chopping_board_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_items_1_1_chopping_board_controller" ],
             [ "FoodAttachableController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_items_1_1_food_attachable_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_items_1_1_food_attachable_controller" ],
@@ -34,6 +44,9 @@ var annotated_dup =
             ] ],
             [ "BootstrapKitchenAsServer", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_bootstrap_kitchen_as_server.html", [
               [ "SceneController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_bootstrap_kitchen_as_server_1_1_scene_controller.html", null ]
+            ] ],
+            [ "KitchenConfigurationTest", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_kitchen_configuration_test.html", [
+              [ "SceneController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_kitchen_configuration_test_1_1_scene_controller.html", null ]
             ] ],
             [ "WorkstationColliderTest", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_workstation_collider_test.html", [
               [ "SceneController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_dev_1_1_workstation_collider_test_1_1_scene_controller.html", null ]

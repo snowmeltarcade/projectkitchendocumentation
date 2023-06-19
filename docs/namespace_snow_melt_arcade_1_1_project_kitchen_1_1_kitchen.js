@@ -1,5 +1,6 @@
 var namespace_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen =
 [
+    [ "Environment", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_environment.html", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_environment" ],
     [ "WorkstationItems", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_items.html", "namespace_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_items" ],
     [ "ClientState", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_client_state.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_client_state" ],
     [ "IFood", "interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_i_food.html", "interface_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_i_food" ],

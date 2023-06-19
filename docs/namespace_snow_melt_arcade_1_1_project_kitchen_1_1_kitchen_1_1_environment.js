@@ -1,0 +1,5 @@
+var namespace_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_environment =
+[
+    [ "KitchenEnvironmentController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_environment_1_1_kitchen_environment_controller.html", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_environment_1_1_kitchen_environment_controller" ],
+    [ "KitchenTileController", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_environment_1_1_kitchen_tile_controller.html", null ]
+];
