@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('_kitchen_environment_controller_8cs_so
 <div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_environment_1_1_kitchen_environment_controller.html#acb056a4639fe04bed6aec49367d2b087">   35</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_environment_1_1_kitchen_environment_controller.html#acb056a4639fe04bed6aec49367d2b087">CreateKitchen</a>()</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        {</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            this.EnsureIsServer();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <a class="code" href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log($<span class="stringliteral">&quot;Creating kitchen: {this.kitchenConfiguration.name}&quot;</span>);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            this.Clear();</div>
@@ -126,44 +126,48 @@ $(document).ready(function(){initNavTree('_kitchen_environment_controller_8cs_so
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="comment">// it is assumed that all tiles are 1x1 in size and that their offset is centered</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            var xOffset = (this.kitchenConfiguration.widthInTiles / 2.0f) - 0.5f;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            var yOffset = (this.kitchenConfiguration.heightInTiles / 2.0f) - 0.5f;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordflow">for</span> (var x = 0u; x &lt; this.kitchenConfiguration.widthInTiles; ++x)</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            {</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                <span class="keywordflow">for</span> (var y = 0u; y &lt; this.kitchenConfiguration.heightInTiles; ++y)</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                {</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                    var kitchenTile = this.kitchenConfiguration.tileMap.GetTile(x, y);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                    var tilePrefab = kitchenTile?.kitchenTileControllerPrefab ??</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                     this.kitchenConfiguration.environment.defaultTile.kitchenTileControllerPrefab;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                    var tile = GameObject.Instantiate(tilePrefab, this.floorTileAnchor);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                    tile.name = $<span class="stringliteral">&quot;Tile: ({x}:{y})&quot;</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                    var tilePrefab =</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                        kitchenTile?.kitchenTileControllerPrefab</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                        ?? this.kitchenConfiguration</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                            .environment</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                            .defaultTile</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                            .kitchenTileControllerPrefab;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                    tile.transform.localPosition = <span class="keyword">new</span>(x - xOffset, 0.0f, y - yOffset);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> Clear()</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keywordflow">foreach</span> (Transform tile <span class="keywordflow">in</span> this.floorTileAnchor)</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                GameObject.Destroy(tile);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            }</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        }</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> EnsureIsServer()</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordflow">if</span> (!this.IsServer)</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException(<span class="stringliteral">&quot;This method must only be run on the server.&quot;</span>);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            }</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        }</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">        #endregion</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                    var tile = GameObject.Instantiate(tilePrefab, this.floorTileAnchor);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                    tile.name = $<span class="stringliteral">&quot;Tile: ({x}:{y})&quot;</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                    tile.transform.localPosition = <span class="keyword">new</span>(x - xOffset, 0.0f, y - yOffset);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> Clear()</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keywordflow">foreach</span> (Transform tile <span class="keywordflow">in</span> this.floorTileAnchor)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                GameObject.Destroy(tile);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> EnsureIsServer()</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="keywordflow">if</span> (!this.IsServer)</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException(<span class="stringliteral">&quot;This method must only be run on the server.&quot;</span>);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">        #endregion</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
 <div class="ttc" id="a_game_runner_8cs_html_a0100be52d45f14348918ea69ec09f959"><div class="ttname"><a href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a></div><div class="ttdeci">UnityEngine.Debug Debug</div><div class="ttdef"><b>Definition:</b> <a href="_game_runner_8cs_source.html#l00008">GameRunner.cs:8</a></div></div>
 <div class="ttc" id="aclass_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_environment_1_1_kitchen_environment_controller_html"><div class="ttname"><a href="class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_environment_1_1_kitchen_environment_controller.html">SnowMeltArcade.ProjectKitchen.Kitchen.Environment.KitchenEnvironmentController</a></div><div class="ttdoc">Creates and controls the kitchen environment. The settings for the environment are controlled by the ...</div><div class="ttdef"><b>Definition:</b> <a href="_kitchen_environment_controller_8cs_source.html#l00011">KitchenEnvironmentController.cs:12</a></div></div>
 <div class="ttc" id="aclass_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_environment_1_1_kitchen_environment_controller_html_acb056a4639fe04bed6aec49367d2b087"><div class="ttname"><a href="class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_environment_1_1_kitchen_environment_controller.html#acb056a4639fe04bed6aec49367d2b087">SnowMeltArcade.ProjectKitchen.Kitchen.Environment.KitchenEnvironmentController.CreateKitchen</a></div><div class="ttdeci">void CreateKitchen()</div><div class="ttdoc">Creates the kitchen based on the set kitchen configuration</div><div class="ttdef"><b>Definition:</b> <a href="_kitchen_environment_controller_8cs_source.html#l00035">KitchenEnvironmentController.cs:35</a></div></div>

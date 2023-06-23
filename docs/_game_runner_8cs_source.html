@@ -134,45 +134,46 @@ $(document).ready(function(){initNavTree('_game_runner_8cs_source.html',''); ini
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        {</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <a class="code" href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log($<span class="stringliteral">&quot;Running game at path: `{this.Path}`...&quot;</span>);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            ProcessStartInfo info = <span class="keyword">new</span>()</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                FileName = this.Path,</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                UseShellExecute = <span class="keyword">false</span>,</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                Arguments = this.BuildCommandLineArguments()</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            };</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            this.Process.StartInfo = info;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            this.Process.Start();</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        }</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">        #endregion</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">        #region Private Methods</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">string</span> BuildCommandLineArguments()</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            List&lt;string&gt; arguments = <span class="keyword">new</span>();</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="keywordflow">if</span> (this.<a class="code" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_editor_1_1_utils_1_1_game_runner.html#a52ac6ebfa5773ccafff345b1c491b6d4">NetworkRunState</a> == <a class="code" href="namespace_snow_melt_arcade_1_1_project_kitchen_1_1_application.html#a9908fad074edece1e6bb8a6c824dc369">NetworkRunStates</a>.Client)</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                arguments.Add(<span class="stringliteral">&quot;--client&quot;</span>);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            }</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (this.<a class="code" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_editor_1_1_utils_1_1_game_runner.html#a52ac6ebfa5773ccafff345b1c491b6d4">NetworkRunState</a> == <a class="code" href="namespace_snow_melt_arcade_1_1_project_kitchen_1_1_application.html#a9908fad074edece1e6bb8a6c824dc369">NetworkRunStates</a>.Server)</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            {</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                arguments.Add(<span class="stringliteral">&quot;--server&quot;</span>);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            }</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="keywordflow">if</span> (this.<a class="code" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_editor_1_1_utils_1_1_game_runner.html#a52683309c6087a5cb92c76de99e8d77d">NetworkConnectTarget</a> == <a class="code" href="namespace_snow_melt_arcade_1_1_project_kitchen_1_1_application.html#a306b264d5c89639a6dbd944764260565">NetworkConnectTargets</a>.Localhost)</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            {</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                arguments.Add(<span class="stringliteral">&quot;--localhost&quot;</span>);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            }</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <span class="keywordflow">return</span> String.Join(<span class="charliteral">&#39; &#39;</span>, arguments);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        }</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">        #endregion</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    }</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            ProcessStartInfo info =</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                <span class="keyword">new</span>()</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                    FileName = this.Path,</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                    UseShellExecute = <span class="keyword">false</span>,</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                    Arguments = this.BuildCommandLineArguments()</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                };</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            this.Process.StartInfo = info;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            this.Process.Start();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">        #endregion</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">        #region Private Methods</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">string</span> BuildCommandLineArguments()</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            List&lt;string&gt; arguments = <span class="keyword">new</span>();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <span class="keywordflow">if</span> (this.<a class="code" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_editor_1_1_utils_1_1_game_runner.html#a52ac6ebfa5773ccafff345b1c491b6d4">NetworkRunState</a> == <a class="code" href="namespace_snow_melt_arcade_1_1_project_kitchen_1_1_application.html#a9908fad074edece1e6bb8a6c824dc369">NetworkRunStates</a>.Client)</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                arguments.Add(<span class="stringliteral">&quot;--client&quot;</span>);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (this.<a class="code" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_editor_1_1_utils_1_1_game_runner.html#a52ac6ebfa5773ccafff345b1c491b6d4">NetworkRunState</a> == <a class="code" href="namespace_snow_melt_arcade_1_1_project_kitchen_1_1_application.html#a9908fad074edece1e6bb8a6c824dc369">NetworkRunStates</a>.Server)</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                arguments.Add(<span class="stringliteral">&quot;--server&quot;</span>);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="keywordflow">if</span> (this.<a class="code" href="class_snow_melt_arcade_1_1_project_kitchen_1_1_editor_1_1_utils_1_1_game_runner.html#a52683309c6087a5cb92c76de99e8d77d">NetworkConnectTarget</a> == <a class="code" href="namespace_snow_melt_arcade_1_1_project_kitchen_1_1_application.html#a306b264d5c89639a6dbd944764260565">NetworkConnectTargets</a>.Localhost)</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                arguments.Add(<span class="stringliteral">&quot;--localhost&quot;</span>);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <span class="keywordflow">return</span> String.Join(<span class="charliteral">&#39; &#39;</span>, arguments);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        }</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">        #endregion</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
 <div class="ttc" id="a_game_runner_8cs_html_a0100be52d45f14348918ea69ec09f959"><div class="ttname"><a href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a></div><div class="ttdeci">UnityEngine.Debug Debug</div><div class="ttdef"><b>Definition:</b> <a href="_game_runner_8cs_source.html#l00008">GameRunner.cs:8</a></div></div>
 <div class="ttc" id="aclass_snow_melt_arcade_1_1_project_kitchen_1_1_editor_1_1_utils_1_1_game_runner_html"><div class="ttname"><a href="class_snow_melt_arcade_1_1_project_kitchen_1_1_editor_1_1_utils_1_1_game_runner.html">SnowMeltArcade.ProjectKitchen.Editor.Utils.GameRunner</a></div><div class="ttdoc">Runs the game with specified command line arguments</div><div class="ttdef"><b>Definition:</b> <a href="_game_runner_8cs_source.html#l00015">GameRunner.cs:16</a></div></div>
 <div class="ttc" id="aclass_snow_melt_arcade_1_1_project_kitchen_1_1_editor_1_1_utils_1_1_game_runner_html_a1a4d244e74e99505779bc598efbd650d"><div class="ttname"><a href="class_snow_melt_arcade_1_1_project_kitchen_1_1_editor_1_1_utils_1_1_game_runner.html#a1a4d244e74e99505779bc598efbd650d">SnowMeltArcade.ProjectKitchen.Editor.Utils.GameRunner.Run</a></div><div class="ttdeci">void Run()</div><div class="ttdoc">Runs the game passing in the set options</div><div class="ttdef"><b>Definition:</b> <a href="_game_runner_8cs_source.html#l00071">GameRunner.cs:71</a></div></div>

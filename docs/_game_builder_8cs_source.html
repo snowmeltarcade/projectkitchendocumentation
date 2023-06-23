@@ -119,83 +119,84 @@ $(document).ready(function(){initNavTree('_game_builder_8cs_source.html',''); in
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <a class="code" href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log($<span class="stringliteral">&quot;Starting build to `{buildPath}` with name `{buildName}`....&quot;</span>);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            BuildPlayerOptions options = <span class="keyword">new</span>()</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                scenes = EditorBuildSettings.scenes.Select(s =&gt; s.path).ToArray(),</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                target = EditorUserBuildSettings.activeBuildTarget</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            };</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            var buildAsSingleInstance = PlayerSettings.forceSingleInstance;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            var buildTargetGroup = BuildPipeline.GetBuildTargetGroup(</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                EditorUserBuildSettings.activeBuildTarget</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            );</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            var namedBuildTarget = NamedBuildTarget.FromBuildTargetGroup(buildTargetGroup);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            var scriptingImplementation = PlayerSettings.GetScriptingBackend(namedBuildTarget);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            var architecture = PlayerSettings.GetArchitecture(namedBuildTarget);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordflow">if</span> (this.IsDebug)</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                options.options |= BuildOptions.Development;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                PlayerSettings.forceSingleInstance = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                <span class="comment">// building as mono allows us to build debug packages on any platform and reduces build times</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                PlayerSettings.SetScriptingBackend(</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                    namedBuildTarget,</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                    ScriptingImplementation.Mono2x</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                );</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                <span class="keywordflow">if</span> (options.target == BuildTarget.StandaloneOSX)</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                    <span class="comment">// for whatever reason, this function doesn&#39;t have an enum for this value</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                    var universal = 2;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                    PlayerSettings.SetArchitecture(namedBuildTarget, universal);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            }</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            var platformBuildName = GameBuilder.GetPlatformSpecificName(buildName, options.target);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            var finalBuildPath = Path.Join(buildPath, platformBuildName);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            options.locationPathName = finalBuildPath;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            var buildReport = BuildPipeline.BuildPlayer(options);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="comment">// reset these values before we worry about if the build succeeded or failed</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            PlayerSettings.forceSingleInstance = buildAsSingleInstance;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            PlayerSettings.SetScriptingBackend(namedBuildTarget, scriptingImplementation);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            PlayerSettings.SetArchitecture(namedBuildTarget, architecture);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            var summary = buildReport.summary;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keywordflow">if</span> (summary.result == BuildResult.Succeeded)</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            {</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                <a class="code" href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log(<span class="stringliteral">&quot;Build succeeded.&quot;</span>);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                <span class="keywordflow">return</span> (finalBuildPath, <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            }</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            {</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                <a class="code" href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log($<span class="stringliteral">&quot;Build failed with {summary.totalErrors} error(s).&quot;</span>);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                <span class="keywordflow">return</span> (String.Empty, <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            }</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        }</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">        #endregion</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">        #region Private Methods</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">string</span> GetPlatformSpecificName(<span class="keywordtype">string</span> name, BuildTarget target) =&gt;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            target <span class="keywordflow">switch</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            {</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                BuildTarget.StandaloneWindows or BuildTarget.StandaloneWindows64 =&gt; $<span class="stringliteral">&quot;{name}.exe&quot;</span>,</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                BuildTarget.StandaloneOSX or BuildTarget.iOS =&gt; Path.Combine($<span class="stringliteral">&quot;{name}.app&quot;</span>),</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                _ =&gt; name,</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            };</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">        #endregion</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    }</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            BuildPlayerOptions options =</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                <span class="keyword">new</span>()</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                    scenes = EditorBuildSettings.scenes.Select(s =&gt; s.path).ToArray(),</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                    target = EditorUserBuildSettings.activeBuildTarget</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                };</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            var buildAsSingleInstance = PlayerSettings.forceSingleInstance;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            var buildTargetGroup = BuildPipeline.GetBuildTargetGroup(</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                EditorUserBuildSettings.activeBuildTarget</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            );</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            var namedBuildTarget = NamedBuildTarget.FromBuildTargetGroup(buildTargetGroup);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            var scriptingImplementation = PlayerSettings.GetScriptingBackend(namedBuildTarget);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            var architecture = PlayerSettings.GetArchitecture(namedBuildTarget);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordflow">if</span> (this.IsDebug)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                options.options |= BuildOptions.Development;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                PlayerSettings.forceSingleInstance = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                <span class="comment">// building as mono allows us to build debug packages on any platform and reduces build times</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                PlayerSettings.SetScriptingBackend(</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                    namedBuildTarget,</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                    ScriptingImplementation.Mono2x</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                );</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                <span class="keywordflow">if</span> (options.target == BuildTarget.StandaloneOSX)</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                    <span class="comment">// for whatever reason, this function doesn&#39;t have an enum for this value</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                    var universal = 2;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                    PlayerSettings.SetArchitecture(namedBuildTarget, universal);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            var platformBuildName = GameBuilder.GetPlatformSpecificName(buildName, options.target);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            var finalBuildPath = Path.Join(buildPath, platformBuildName);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            options.locationPathName = finalBuildPath;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            var buildReport = BuildPipeline.BuildPlayer(options);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="comment">// reset these values before we worry about if the build succeeded or failed</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            PlayerSettings.forceSingleInstance = buildAsSingleInstance;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            PlayerSettings.SetScriptingBackend(namedBuildTarget, scriptingImplementation);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            PlayerSettings.SetArchitecture(namedBuildTarget, architecture);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            var summary = buildReport.summary;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keywordflow">if</span> (summary.result == BuildResult.Succeeded)</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                <a class="code" href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log(<span class="stringliteral">&quot;Build succeeded.&quot;</span>);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                <span class="keywordflow">return</span> (finalBuildPath, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                <a class="code" href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log($<span class="stringliteral">&quot;Build failed with {summary.totalErrors} error(s).&quot;</span>);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                <span class="keywordflow">return</span> (String.Empty, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">        #endregion</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">        #region Private Methods</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">string</span> GetPlatformSpecificName(<span class="keywordtype">string</span> name, BuildTarget target) =&gt;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            target <span class="keywordflow">switch</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            {</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                BuildTarget.StandaloneWindows or BuildTarget.StandaloneWindows64 =&gt; $<span class="stringliteral">&quot;{name}.exe&quot;</span>,</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                BuildTarget.StandaloneOSX or BuildTarget.iOS =&gt; Path.Combine($<span class="stringliteral">&quot;{name}.app&quot;</span>),</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                _ =&gt; name,</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            };</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">        #endregion</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    }</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;}</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="a_game_runner_8cs_html_a0100be52d45f14348918ea69ec09f959"><div class="ttname"><a href="_game_runner_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a></div><div class="ttdeci">UnityEngine.Debug Debug</div><div class="ttdef"><b>Definition:</b> <a href="_game_runner_8cs_source.html#l00008">GameRunner.cs:8</a></div></div>
 <div class="ttc" id="anamespace_snow_melt_arcade_1_1_project_kitchen_1_1_editor_1_1_utils_html"><div class="ttname"><a href="namespace_snow_melt_arcade_1_1_project_kitchen_1_1_editor_1_1_utils.html">SnowMeltArcade.ProjectKitchen.Editor.Utils</a></div><div class="ttdef"><b>Definition:</b> <a href="_game_runner_8cs_source.html#l00010">GameRunner.cs:11</a></div></div>
 <div class="ttc" id="anamespace_system_html"><div class="ttname"><a href="namespace_system.html">System</a></div><div class="ttdef"><b>Definition:</b> <a href="_enable_records_8cs_source.html#l00005">EnableRecords.cs:6</a></div></div>
