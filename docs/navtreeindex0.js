@@ -132,10 +132,12 @@ var NAVTREEINDEX0 =
 "_spawned_object_id_8cs_source.html":[2,0,0,0,0,0,4,7],
 "_startup_controller_8cs.html":[2,0,0,0,0,0,7,4,0],
 "_startup_controller_8cs_source.html":[2,0,0,0,0,0,7,4,0],
-"_timed_value_lerp_float_8cs.html":[2,0,0,0,0,0,10,1],
-"_timed_value_lerp_float_8cs_source.html":[2,0,0,0,0,0,10,1],
-"_timed_value_lerp_vector3_8cs.html":[2,0,0,0,0,0,10,2],
-"_timed_value_lerp_vector3_8cs_source.html":[2,0,0,0,0,0,10,2],
+"_time_accumulator_8cs.html":[2,0,0,0,0,0,10,1],
+"_time_accumulator_8cs_source.html":[2,0,0,0,0,0,10,1],
+"_timed_value_lerp_float_8cs.html":[2,0,0,0,0,0,10,2],
+"_timed_value_lerp_float_8cs_source.html":[2,0,0,0,0,0,10,2],
+"_timed_value_lerp_vector3_8cs.html":[2,0,0,0,0,0,10,3],
+"_timed_value_lerp_vector3_8cs_source.html":[2,0,0,0,0,0,10,3],
 "_u_i_configuration_controller_8cs.html":[2,0,0,0,0,0,7,3,1],
 "_u_i_configuration_controller_8cs_source.html":[2,0,0,0,0,0,7,3,1],
 "_u_i_server_details_controller_8cs.html":[2,0,0,0,0,0,7,3,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX0 =
 "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_client_controller.html#a4332e72a58172c2f79b7c1a0e11d4f4b":[1,0,0,0,4,1,1,0],
 "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_client_controller.html#a46c3113ae526db2002f5e04ebc9652bb":[1,0,0,0,4,1,1,2],
 "class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_client_controller.html#a826c3e857d8ece315542bd153e2e132d":[1,0,0,0,4,1,1,1],
-"class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html":[1,0,0,0,4,1,2],
-"class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html#a16b095ec89bb3c7ed4d53061063709de":[1,0,0,0,4,1,2,2],
-"class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html#a28cdb6fa67227dcfafb8de8a1e139f4a":[1,0,0,0,4,1,2,1]
+"class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html":[1,0,0,0,4,1,2]
 };

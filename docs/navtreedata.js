@@ -56,7 +56,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_application_version_8cs.html",
-"class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html#a2e5125b83df06080a2a8bd3be5bbdfe7"
+"class_snow_melt_arcade_1_1_project_kitchen_1_1_scenes_1_1_kitchen_1_1_kitchen_controller.html#a16b095ec89bb3c7ed4d53061063709de"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

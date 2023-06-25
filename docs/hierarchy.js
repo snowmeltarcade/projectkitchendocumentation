@@ -60,5 +60,6 @@ var hierarchy =
       [ "SnowMeltArcade.ProjectKitchen.Configuration.KitchenTile", "class_snow_melt_arcade_1_1_project_kitchen_1_1_configuration_1_1_kitchen_tile.html", null ],
       [ "SnowMeltArcade.ProjectKitchen.Configuration.KitchenTileMap", "class_snow_melt_arcade_1_1_project_kitchen_1_1_configuration_1_1_kitchen_tile_map.html", null ]
     ] ],
+    [ "SnowMeltArcade.ProjectKitchen.Utils.TimeAccumulator", "class_snow_melt_arcade_1_1_project_kitchen_1_1_utils_1_1_time_accumulator.html", null ],
     [ "SnowMeltArcade.ProjectKitchen.Kitchen.WorkstationGrid", "class_snow_melt_arcade_1_1_project_kitchen_1_1_kitchen_1_1_workstation_grid.html", null ]
 ];
